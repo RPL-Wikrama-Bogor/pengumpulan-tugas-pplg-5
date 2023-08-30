@@ -22,14 +22,13 @@
 <?php
 
 if(isset($_POST['submit'])){
-    
-$j = $_POST['jam'];
-$m = $_POST['menit'];
-$d = $_POST['detik'];
-$j = $j *3600;
-$m = $m *60;
-$total_detik = $j + $m + $d . "total detik";
-echo $total_detik;
+    $j = $_POST['jam'];
+    $m = $_POST['menit'];
+    $d = $_POST['detik'];
+    $j = $j *3600;
+    $m = $m *60;
+    $total_detik = $j + $m + $d . "total detik";
+    echo $total_detik;
 }
 
 ?>
