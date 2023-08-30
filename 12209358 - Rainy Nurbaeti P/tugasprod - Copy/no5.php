@@ -8,7 +8,7 @@
 <body>
     <form action="#" method="post">
         <label for="jam">
-        Jam : <input type="number" name="jam"><br><br>
+        Jam : <input type="number" name="jamm"><br><br>
         <label for="menit">
         Menit : <input type="number" name="menit"><br><br>
         <label for="detik">
@@ -22,7 +22,8 @@
 <?php
 
 if(isset($_POST['submit'])){
-    $j = $_POST['jam'];
+
+    $j = $_POST['jamm'];
     $m = $_POST['menit'];
     $d = $_POST['detik'];
     $j = $j *3600;
