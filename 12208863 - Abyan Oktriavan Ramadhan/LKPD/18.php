@@ -12,27 +12,72 @@
     height: 30px;
     display: inline-block;
   }
+
+  body {
+      font-family: Arial, sans-serif;
+      background-color: #0D1282;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    input {
+      width: 100px;
+      height: 30px;
+      margin-right: 10px;
+    }
+
+    button {
+      margin-right: 50px;
+      padding: 8px 15px;
+      background-color: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    p {
+      margin: 10px 0;
+      cursor: pointer;
+      color: #007bff;
+    }
 </style>
 
 <body>
+  <div class="container">
   <form action="" method="post">
     <div id="box">
       <div style="display: flex; width: fit-content;">
-        <label for="nama">Nama: </label>
+        <label for="nama">Nama : </label>
         <input type="text" name="nama[]" required>
-        <label for="kehadiran">Input Kehadiran: </label>
-        <input type="number" name="kehadiran[]" required>
-        <label for="mtk">MTK: </label>
-        <input type="number" name="mtk[]" required>
-        <label for="indo">Indo: </label>
-        <input type="number" name="indo[]" required>
-        <label for="ing">Ing: </label>
-        <input type="number" name="ing[]" required>
-        <label for="dpk">DPK: </label>
-        <input type="number" name="dpk[]" required>
-        <label for="agama">Agama: </label>
-        <input type="number" name="agama[]" required>
-        <p style="cursor: pointer; color: blue;" onclick="tambahInput()">Tambah Input Form</p>
+        <label for="kehadiran">Kehadiran(%) : </label>
+        <input type="number" name="kehadiran[]" required min="0" max="100">
+        <label for="mtk">MTK : </label>
+        <input type="number" name="mtk[]" required min="0" max="100">
+        <label for="indo">Indo : </label>
+        <input type="number" name="indo[]" required min="0" max="100">
+        <label for="ing">Inggris : </label>
+        <input type="number" name="ing[]" required min="0" max="100">
+        <label for="dpk">DPK : </label>
+        <input type="number" name="dpk[]" required min="0" max="100">
+        <label for="agama">Agama : </label>
+        <input type="number" name="agama[]" required min="0" max="100">
+        <p style="cursor: pointer; color: blue;" onclick="tambahInput()">Tambah Input</p>
         <button type="submit" name="submit">Kirim</button>
       </div>
     </div>
@@ -45,20 +90,20 @@
       if (jumlahInput < 10) {
         let inputElement = `
                     <br><div style="display: flex; width: fit-content;">
-                    <label for="nama">Nama: </label>
+                    <label for="nama">Nama : </label>
                     <input type="text" name="nama[]" required>
-                    <label for="kehadiran">Input Kehadiran: </label>
-                    <input type="number" name="kehadiran[]" required>
-                    <label for="mtk">MTK: </label>
-                    <input type="number" name="mtk[]" required>
-                    <label for="indo">Indo: </label>
-                    <input type="number" name="indo[]" required>
-                    <label for="ing">Ing: </label>
-                    <input type="number" name="ing[]" required>
-                    <label for="dpk">DPK: </label>
-                    <input type="number" name="dpk[]" required>
-                    <label for="agama">Agama: </label>
-                    <input type="number" name="agama[]" required>
+                    <label for="kehadiran">Kehadiran(%) : </label>
+                    <input type="number" name="kehadiran[]" required min="0" max="100">
+                    <label for="mtk">MTK : </label>
+                    <input type="number" name="mtk[]" required min="0" max="100">
+                    <label for="indo">Indo : </label>
+                    <input type="number" name="indo[]" required min="0" max="100">
+                    <label for="ing">Inggris : </label>
+                    <input type="number" name="ing[]" required min="0" max="100">
+                    <label for="dpk">DPK : </label>
+                    <input type="number" name="dpk[]" required min="0" max="100">
+                    <label for="agama">Agama : </label>
+                    <input type="number" name="agama[]" required min="0" max="100">
                 </div>`;
         document.getElementById('box').innerHTML += inputElement;
         jumlahInput++;
@@ -69,71 +114,65 @@
   <?php
   if (isset($_POST['submit'])) {
     $nama = $_POST['nama'];
-    $hadir = $_POST['kehadiran'];
+    $kehadiran = $_POST['kehadiran'];
     $mtk = $_POST['mtk'];
     $indo = $_POST['indo'];
     $ing = $_POST['ing'];
     $dpk = $_POST['dpk'];
     $agama = $_POST['agama'];
 
-    $data = [];
     $jumlahData = count($nama);
 
+    $output = []; // array untuk menyimpan output
+
     for ($i = 0; $i < $jumlahData; $i++) {
-      $data[$i] = [
+      $rataRata = ($mtk[$i] + $indo[$i] + $dpk[$i] + $agama[$i] + $ing[$i]);
+
+      if ($rataRata >= 475 && $kehadiran[$i] == 100) {
+        $juaraKelas = "Juara Kelas";
+      } else {
+        $juaraKelas = "-";
+      }
+
+      $output[] = [
         'nama' => $nama[$i],
-        'kehadiran' => $hadir[$i],
-        'mtk' => $mtk[$i],
-        'indo' => $indo[$i],
-        'ing' => $ing[$i],
-        'dpk' => $dpk[$i],
-        'agama' => $agama[$i]
+        'rata_rata' => $rataRata,
+        'kehadiran' => $kehadiran[$i],
+        'juara_kelas' => $juaraKelas
       ];
     }
-
-    $totalData =
-      array_sum(array_column($data, 'mtk')) +
-      array_sum(array_column($data, 'indo')) +
-      array_sum(array_column($data, 'ing')) +
-      array_sum(array_column($data, 'dpk')) +
-      array_sum(array_column($data, 'agama'));
-
-    $rataRata = round($totalData / (count($data) * 5));
-
-    echo "Total Data: $totalData<br>";
-
-    $dataKehadiran = [];
-    echo "<p>Daftar Kehadiran : </p>";
-    foreach ($data as $item) {
-      echo "{$item['nama']} <br>";
-      echo "{$item['kehadiran']}% <br>";
-      echo "Total Nilai: " . ($item['mtk'] + $item['indo'] + $item['ing'] + $item['dpk'] + $item['agama']) . "<br>";
-      $dataKehadiran[] = $item['kehadiran'];
-    }
-
-    $rataRataKehadiran = round(array_sum($dataKehadiran) / count($dataKehadiran));
-
-    echo "Rata-rata Kehadiran: $rataRataKehadiran%<br>";
-
-    $juara = [];
-    foreach ($data as $item) {
-      if ($rataRata >= 80 && $item['kehadiran'] == 100) {
-        $juara[] = $item['nama']; 
-      }
-    }
-
-    if (!empty($juara)) {
-      echo "Juara: ";
-      for ($i = 0; $i < count($juara); $i++) {
-        echo $juara[$i];
-        if ($i < count($juara) - 1) {
-          echo ", ";
-        }
-      }
-    }
-
   }
+
+  // Menampilkan hasil
+  if (!empty($output)) {
+    foreach ($output as $data) {
+      echo "Nama: " . $data['nama'] . "<br>";
+      echo "Rata-rata: " . $data['rata_rata'] . "<br>";
+      echo "Kehadiran: " . $data['kehadiran'] . "% <br>";
+      echo "--------------------------------------------------------";
+      echo "<br>";
+    }
+  }
+  if (!empty($output)) {
+    echo "Juara Kelas: ";
+    $juaraKelasNames = [];
+
+    foreach ($output as $data) {
+      if ($data['juara_kelas'] == "Juara Kelas") {
+        $juaraKelasNames[] = $data['nama'];
+      }
+    }
+
+    if (!empty($juaraKelasNames)) {
+      echo implode(', ', $juaraKelasNames);
+    } else {
+      echo "-";
+    }
+  }
+
+
   ?>
+  </div>
 </body>
 
 </html>

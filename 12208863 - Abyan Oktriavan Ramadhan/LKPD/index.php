@@ -22,203 +22,132 @@
             border: 1px solid #ccc; /* Untuk tampilan kartu yang lebih jelas */
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Bayangan kartu untuk efek visual */
         }
+
+        h1{
+            text-align: center;
+            margin-top: 70px;
+        }
     </style>
 </head>
 
 <body>
+    <h1>Abyan Oktriavan Ramadhan</h1>
     <div class="position-absolute top-50 start-50 translate-middle">
         <div class="container-card">
             <div class="card" style="width: 18rem;">
                 <div class="card-body">
                     <h5 class="card-title">LKPD 4</h5>
-                    <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="card-link">Card link</a>
-                    <a href="#" class="card-link">Another link</a>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">Menetukan gaji karyawan</h6>
+                    <a href="4.php" class="card-link">Link</a>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
                 <div class="card-body" class="card">
-                    <h5 class="card-title">Card title</h5>
-                    <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="card-link">Card link</a>
-                    <a href="#" class="card-link">Another link</a>
+                    <h5 class="card-title">LKPD 5</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">Mengkonversi jam menit detik ke total detik</h6>
+                    <a href="5.php" class="card-link">Link</a>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
                 <div class="card-body" class="card">
-                    <h5 class="card-title">Card title</h5>
-                    <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="card-link">Card link</a>
-                    <a href="#" class="card-link">Another link</a>
+                    <h5 class="card-title">LKPD 6</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">Mengkonfersi total detik ke bentuk jam menit dan detik</h6>
+                    <a href="6.php" class="card-link">Card link</a>
+                 </div>
+            </div>
+            <div class="card" style="width: 18rem;">
+                <div class="card-body" class="card">
+                    <h5 class="card-title">LKPD 7</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">Menghitung jumlah uang yang harus di bayarkan berdasarkan beratnya</h6>
+                    <a href="7.php" class="card-link">Link</a>  
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
                 <div class="card-body" class="card">
-                    <h5 class="card-title">Card title</h5>
-                    <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="card-link">Card link</a>
-                    <a href="#" class="card-link">Another link</a>
+                    <h5 class="card-title">LKPD 8</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">Bilangan bulat dan memberikan output berupa angka satuan puluhan dan ratusan</h6>
+                    <a href="8.php" class="card-link">Link</a>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
                 <div class="card-body" class="card">
-                    <h5 class="card-title">Card title</h5>
-                    <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="card-link">Card link</a>
-                    <a href="#" class="card-link">Another link</a>
+                    <h5 class="card-title">LKPD 9</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">Menentukan suhu cuaca dari farenhait ke celcius</h6>
+                    <a href="9.php" class="card-link">Link</a>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
                 <div class="card-body" class="card">
-                    <h5 class="card-title">Card title</h5>
-                    <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="card-link">Card link</a>
-                    <a href="#" class="card-link">Another link</a>
+                    <h5 class="card-title">LKPD 10</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">Menentukan grade siswa</h6>
+                    <a href="10.php" class="card-link">Link</a>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
                 <div class="card-body" class="card">
-                    <h5 class="card-title">Card title</h5>
-                    <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="card-link">Card link</a>
-                    <a href="#" class="card-link">Another link</a>
+                    <h5 class="card-title">LKPD 11</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">Menentukan kode pegawai</h6>
+                    <a href="11.php" class="card-link">Link</a>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
                 <div class="card-body" class="card">
-                    <h5 class="card-title">Card title</h5>
-                    <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="card-link">Card link</a>
-                    <a href="#" class="card-link">Another link</a>
+                    <h5 class="card-title">LKPD 12</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">Menambah 1 detik secara Otomatis :D</h6>
+                    <a href="12.php" class="card-link">Link</a>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
                 <div class="card-body" class="card">
-                    <h5 class="card-title">Card title</h5>
-                    <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="card-link">Card link</a>
-                    <a href="#" class="card-link">Another link</a>
+                    <h5 class="card-title">LKPD 13</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">Mencetak Bilangan 1 sd 50</h6>
+                    <a href="13.php" class="card-link">Link</a>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
                 <div class="card-body" class="card">
-                    <h5 class="card-title">Card title</h5>
-                    <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="card-link">Card link</a>
-                    <a href="#" class="card-link">Another link</a>
+                    <h5 class="card-title">LKPD 14</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">Mencetak Bilangan 1 sd 50 ganjil saja</h6>
+                    <a href="14.php" class="card-link">Link</a>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
                 <div class="card-body" class="card">
-                    <h5 class="card-title">Card title</h5>
-                    <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="card-link">Card link</a>
-                    <a href="#" class="card-link">Another link</a>
+                    <h5 class="card-title">LKPD 15</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">Mencetak Bilangan 1 sd 50 genap saja</h6>
+                    <a href="15.php" class="card-link">Link</a>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
                 <div class="card-body" class="card">
-                    <h5 class="card-title">Card title</h5>
-                    <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="card-link">Card link</a>
-                    <a href="#" class="card-link">Another link</a>
+                    <h5 class="card-title">LKPD 16</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">Mencetak Bilangan 1 sd 50 ganjil dan genap di terpisah</h6>
+                    <a href="16.php" class="card-link">Link</a>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
                 <div class="card-body" class="card">
-                    <h5 class="card-title">Card title</h5>
-                    <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="card-link">Card link</a>
-                    <a href="#" class="card-link">Another link</a>
+                    <h5 class="card-title">LKPD 17</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">Menginput bilangan sebanyak 20 dan bisa menentukan bilangan terkecil terbesar dan rata rata</h6>
+                    <a href="17.php" class="card-link">Link</a>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
                 <div class="card-body" class="card">
-                    <h5 class="card-title">Card title</h5>
-                    <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="card-link">Card link</a>
-                    <a href="#" class="card-link">Another link</a>
+                    <h5 class="card-title">LKPD 18</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">Menginput nilai dan kehadiran siswa dan bisa menentukan juaranya</h6>
+                    <a href="18.php" class="card-link">Link</a>
                 </div>
             </div>
             <div class="card" style="width: 18rem;">
                 <div class="card-body" class="card">
-                    <h5 class="card-title">Card title</h5>
-                    <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="card-link">Card link</a>
-                    <a href="#" class="card-link">Another link</a>
+                    <h5 class="card-title">LKPD 19</h5>
+                    <h6 class="card-subtitle mb-2 text-body-secondary">Menentukan keuntungan dari penjualan tiket bioskop</h6>
+                    <a href="19Ver2.php" class="card-link">Link</a>
                 </div>
             </div>
-            <div class="card" style="width: 18rem;">
-                <div class="card-body" class="card">
-                    <h5 class="card-title">Card title</h5>
-                    <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="card-link">Card link</a>
-                    <a href="#" class="card-link">Another link</a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <div class="card-body" class="card">
-                    <h5 class="card-title">Card title</h5>
-                    <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="card-link">Card link</a>
-                    <a href="#" class="card-link">Another link</a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <div class="card-body" class="card">
-                    <h5 class="card-title">Card title</h5>
-                    <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="card-link">Card link</a>
-                    <a href="#" class="card-link">Another link</a>
-                </div>
-            </div>
-            <div class="card" style="width: 18rem;">
-                <div class="card-body" class="card">
-                    <h5 class="card-title">Card title</h5>
-                    <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="card-link">Card link</a>
-                    <a href="#" class="card-link">Another link</a>
-                </div>
-            </div>
+            
         </div>
     </div>
 </body>
 </html>
-
-<table>
-        <a href="4.php">NO 4</a>    
-        <a href="5.php">NO 5</a>    
-        <a href="6.php">NO 6</a>    
-        <a href="7.php">NO 7</a>    
-        <a href="8.php">NO 8</a>    
-        <a href="9.php">NO 9</a>    
-        <a href="10.php">NO 10</a>    
-        <a href="11.php">NO 11</a>    
-        <a href="12.php">NO 12</a>    
-        <a href="13.php">NO 13</a>
-        <a href="14.php">NO 14</a>
-        <a href="15.php">NO 15</a>
-        <a href="16.php">NO 16</a>
-        <a href="17.php">NO 17</a>
-        <a href="18.php">NO 18</a>
-        <a href="19.php">NO 19</a>
-    </table>
