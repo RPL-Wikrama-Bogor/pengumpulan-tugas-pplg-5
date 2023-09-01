@@ -17,39 +17,30 @@
             padding: 30px;
             text-align: center;
             width: 30%;
-            margin: 14% auto 0;
-        }
-
-        .card h2 {
-            margin-top: 2%;
+            margin: auto ;
+            margin-left: 450px;
+            margin-right: 450px;
+            margin-top: 100px;
         }
 
         button {
-            background-color: #007bff;
-            border: none;
+            border: solid, black;
             border-radius: 5px;
-            color: white;
+            color: black;
             cursor: pointer;
             padding: 8px 18px;
             text-align: center;
             font-size: 15px;
             transition-duration: 0.4s;
-            margin-top: 7px;
+            margin-top: 40px;
         }
 
         button:hover {
             background-color: #0056b3;
+            color: white;
         }
 
-        .hasil {
-            background-color: #ffffff;
-            border-radius: 10px;
-            box-shadow: 2px 8px 20px 0 rgba(0, 0, 0, 0.2);
-            padding: 30px;
-            text-align: center;
-            width: 28%;
-            margin-top: 3%;
-        }
+
     </style>
 </head>
 <body>
