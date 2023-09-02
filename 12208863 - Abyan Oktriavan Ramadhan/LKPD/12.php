@@ -58,7 +58,7 @@
         <form action="" method="post">
             <h1>Tambah 1 detik secara otomatis :D</h1>
             <label for="hh">Input HH</label>
-            <input type="number" name="hh" id="hh">
+            <input type="number" name="hh" id="hh" maxleng>
             <label for="mm">Input MM</label>
             <input type="number" name="mm" id="mm">
             <label for="ss">Input SS</label>
