@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latihan</title>
+  <style>
+    body{
+      font-family: Arial;
+      font-family: 'Quaaykop', sans-serif;
+    }
+
+    nav{
+      margin-right: 55px;
+    }
+
+    button{
+      float: right;
+      background-color: #FFE569;
+      border-radius: 15px;
+      padding: 10px 17px;
+      border: none;
+    }
+    h2{
+      text-align: center;
+    }
+
+    .konten{
+      padding: 50px;
+    }
+    .text{
+      float: left;
+    }
+    img{
+      width: 50%;
+      height: 50%;
+      max-width: 100%;
+      float: right;
+    }
+
+    .card{
+      box-sizing: border-box;
+	    padding: 20px;
+      margin-top: 240px;
+      display: flex;
+      width: 100%;
+      font-size: 20px;
+
+    }
+
+    .card1{
+      width: 80rem;
+      height: 7rem;
+      background-color: #FFE569;
+      margin: 2px;
+      box-sizing: border-box;
+      padding: 10px;
+      text-align: center;
+      padding: 30px;
+      float: center;
+    }
+
+    .form-container {
+      max-width: 600px;
+      margin: 0 auto;
+      border: 1px solid;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+
+    .form-group {
+      margin-bottom: 10px;
+    }
+    form{
+      background-color: #e8e8e9;
+      padding: 40px 20px;
+      width: 40%;
+    }
+
+    input[type="text"]{
+      width: 95%;
+      padding: 10px;
+      border: none;
+      border-radius: 3px;
+    }
+    .box{
+      width: 50%;
+      float: right;
+    }
+    .box1{
+      border: 2px solid;
+      padding-left: 45px;
+      padding-right: 45px;
+      padding-top: 17px;
+      padding-bottom: 65px;
+      /* padding: 40px; */
+      margin: 5px;
+
+    }
+    .box1 img {
+      width: 20px;
+    }
+    footer{
+      background-color: #FFE569;
+      text-align: center;
+      padding: 10px;
+    }
+
+    @media only screen and (max-width: 700px) {
+      .box1{
+        padding: 20px;
+      }
+    }
+    @import url('https://fonts.cdnfonts.com/css/quaaykop');
+    </style>
+    <link href="https://fonts.cdnfonts.com/css/quaaykop" rel="stylesheet">
+</head>
+
+<body>
+  <nav>
+    <button>Administrator</button>
+  </nav>
+
+  <section class="konten">
+    <section class="konten1">
+      <img src="buku.jpeg">
+      <div class="text">
+        <ol>
+          <h3>Pengaduan Masyarakat</h3>
+          <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eligendi,</li>
+          <li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum,</li>
+          <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea fugiat</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="card">
+      <div class="card1">Jumlah Kecamatan
+        <p>15</p>
+      </div>
+      <div class="card1">Jumlah Desa 
+        <p>42</p>
+      </div>
+      <div class="card1">Jumlah Penduduk
+        <p>12.000</p>
+      </div>
+      <div class="card1">Data per Tahun
+        <p>2023</p>
+      </div>
+    </section>
+
+    <div class="box">
+      <h1>Laporan Pengaduan</h1>
+      <div class="box1">
+        <p class="tanggal" style=" text-align: right;">31 Agustus 2023 : Ardila Rosliani</p>
+        <img src="download (51).jpg" style=" width: 100px">
+        <p style=" text-align: left;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque.</p>
+      </div>
+      <div class="box1">
+        <p class="tanggal" style=" text-align: right;">32 September 2024 : Ardila Rosliani</p>
+        <img src="download (51).jpg" style=" width: 100px">
+        <p style=" text-align: left;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit, eveniet.</p>
+      </div>
+    </div>
+
+    <div cl ass="form-container">
+      <form>
+        <h2>Pengaduan</h2>
+        <div class="form-group">
+          <label for="nik">NIK :</label>
+          <input type="text" id="nik" name="nik" placeholder="Masukkan NIK Anda">
+        </div>
+        <div class="form-group">
+          <label for="nama">Nama Lengkap:</label>
+          <input type="text" id="nama" name="nama" placeholder="Masukkan Nama Anda">
+        </div>
+        <div class="form-group">
+          <label for="tlp">Nomor Telepon:</label>
+          <input type="text" id="tlp" name="tlp" placeholder="Masukan nomor telepon Anda">
+        </div>
+        <div class="form-group">
+          <label for="pengaduan">Pengaduan:</label>
+          <input type="text" id="pengaduan" name="pengaduan" placeholder=" ">
+        </div>
+        <div class="form-group">
+          <label for="pengaduan">Upload Gambar Terkait</label>
+          <br>
+          <input type="file" id="gambar" name="gambar" placeholder=" ">
+        </div>
+        <button type="submit" style="background-color: white;">Submit</button>
+      </form>
+    </div>
+  </section>
+</body>
+<footer>
+  <p>Copyrigth ©2023;</p>
+</footer>
+</html>
