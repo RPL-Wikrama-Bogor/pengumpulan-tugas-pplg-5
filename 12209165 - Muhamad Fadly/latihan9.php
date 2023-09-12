@@ -23,7 +23,7 @@ if (isset($_POST['submit'])) {
     $fh = $_POST['fh'];
    
 
-    $suhu_c =$fh* 5/9 x ($fh – 32) ;
+    $suhu_c =$fh* 5/9 x ($fh  32) ;
 
     if ($suhu_c > 300) {
         echo"<h2>suhu sekarang adalah panas</h2>";
