@@ -33,7 +33,7 @@
             $keuntungan_eksekutif = 0;
             $keuntungan_ekonomi = 0;
 
-           
+            
             if ($jumlah_tiket_vip >= 35) {
                 $keuntungan_vip = $jumlah_tiket_vip * 25 / 100;
             } elseif ($jumlah_tiket_vip >= 20 && $jumlah_tiket_vip < 35) {
@@ -42,7 +42,7 @@
                 $keuntungan_vip = $jumlah_tiket_vip * 5 / 100;
             }
 
-           
+            
             if ($jumlah_tiket_eksekutif >= 40) {
                 $keuntungan_eksekutif = $jumlah_tiket_eksekutif * 20 / 100;
             } elseif ($jumlah_tiket_eksekutif >= 20 && $jumlah_tiket_eksekutif < 40) {
@@ -51,10 +51,10 @@
                 $keuntungan_eksekutif = $jumlah_tiket_eksekutif * 2 / 100;
             }
 
-         
+           
             $keuntungan_ekonomi = $jumlah_tiket_ekonomi * 7 / 100;
 
-           
+         
             $total_tiket = $jumlah_tiket_vip + $jumlah_tiket_eksekutif + $jumlah_tiket_ekonomi;
             $total_keuntungan = $keuntungan_vip + $keuntungan_eksekutif + $keuntungan_ekonomi;
 
