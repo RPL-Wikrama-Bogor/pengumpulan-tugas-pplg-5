@@ -39,7 +39,7 @@
         width: 100%;
     }
 
-    /* CSS untuk alert */
+
     .alert {
         background-color: #f44336;
         color: white;
