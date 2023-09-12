@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nisa</title>
+    <style>
+        :root {
+      font-size: 15px;
+      
+      --var-soft-blue: hsl(215, 51%, 70%);
+      --var-cyan: hsl(178, 100%, 50%);
+    
+      --var-main-darkest: hsl(217, 54%, 11%);
+      --var-card-dark: hsl(216, 50%, 16%);
+      --var-line-dark: hsl(215, 32%, 27%);
+      --var-lightest: white;
+     
+      --var-heading: normal normal 600 1.5em/1.6em 'Outfit', sans-serif;
+      --var-small-heading: normal normal 400 1em/1em 'Outfit', sans-serif;
+      --var-para: normal normal 300 1em/1.55em 'Outfit', sans-serif;
+    }
+        .hal{
+            height: 100%;
+      scroll-snap-type: y mandatory;
+      overflow-y: scroll;
+      scroll-behavior: smooth;
+        }
+         .section {
+      height: 100%;
+      scroll-snap-align: start;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+    }
+    
+    .section:nth-child(odd) {
+      background-color: var(--var-line-dark);
+    }
+    
+    .section:nth-child(even) {
+      background-color: var(--var-card-dark);
+    }
+        img {
+            float: right;
+            width: 60rem;
+            margin-left: 20px; 
+        }
+        .container{
+            font-size: 1.4rem;
+            background-color:#f0c837 ;
+           
+            padding-bottom: 1rem;
+            padding-top: 1rem;
+            display: inline-block; /* Mengatur div-container menjadi inline-block */
+            width: calc(21% - 10px); /* 25% dari lebar layar, dikurangi margin */
+            margin-right: 50px; /* Jarak antara div-container */
+       
+        }
+        .kotak{
+           margin-top: 20rem;
+        }
+    </style>
+</head>
+<body>
+<div class="hal">
+    <div class="selection">
+        <img src="gaje.png">
+        <h1>pengaduan masyarakat</h1>
+        <p>1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus cupiditate, dolorum aspernatur quis quisquam fugiat atque qui vero molestiae architecto veritatis est modi minima? Error cum doloremque dicta nostrum aliquam?</p>
+        <p>2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus cupiditate, dolorum aspernatur quis quisquam fugiat atque qui vero molestiae architecto veritatis est modi minima? Error cum doloremque dicta nostrum aliquam?</p>
+        <p>3. Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus cupiditate, dolorum aspernatur quis quisquam fugiat atque qui vero molestiae architecto veritatis est modi minima? Error cum doloremque dicta nostrum aliquam?</p>
+        <div class="kotak">
+            <center>
+                <div class="container">
+                
+                    <p>jumlah kecamatan</p>
+                    <p>12</p>
+                </div>
+                <div class="container">
+                    <p>jumlah desa</p>
+                    <p>12</p>
+                </div>
+                <div class="container">
+                    <p>jumlah penduduk</p>
+                    <p>12</p>
+                </div>
+                <div class="container">
+                    <p>jumlah data pertahun</p>
+                    <p>12</p>
+                </div>
+        </div>
+            </center>
+        </div>
+    </div>
+</div>
+<div class="selection">
+<h1>fjdsaklfjk</h1>
+
+</div>
+</body>
+</html>
