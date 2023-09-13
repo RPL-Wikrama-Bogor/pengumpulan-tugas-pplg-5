@@ -1,4 +1,5 @@
 <?php 
+// data
 $furnitures = [
     [
         "nama" => "Rak piring 100cm X 200cm",
