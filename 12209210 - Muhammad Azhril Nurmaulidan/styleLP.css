@@ -1,50 +1,183 @@
 body {
     font-family: Arial, sans-serif;
-    background: #525252;
-    background: -webkit-linear-gradient(to right, #3d72b4, #525252);
-    background: linear-gradient(to right, #3d72b4, #525252);  
+    background-color: #352F44;
     margin: 0;
     padding: 0;
-  }
-  
-  form {
-    background-color: #ffffff;
-    border: 1px solid #ccc;
-    padding: 20px;
-    width: 300px;
-    margin: 150px;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 20px;
-  }
-  
-  input[type="text"] {
-    width: 100%;
-    padding: 5px;
-    border-radius: 4px;
-    margin-bottom: 15px;
-  }
-  
-  button[type="submit"] {
-    background-color: #007bff;
-    color: #ffffff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  button[type="submit"]:hover {
-    background-color: black;
-  }
-  
-  .echo {
+}
+
+.hoho {
     color: white;
-    border: 1px solid #ccc;
+    padding-left: 10%;
+    
+}
+
+.button {
+    padding: 10px 30px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+h2 {
+    margin-top: 70px;
+    font-size: 24px;
+}
+
+ol {
+    margin-top: 10px;
+    text-align: left;
+}
+
+li {
+    margin-bottom: 5px;
+}
+
+.img {
+    max-width: 50%;
+    padding-left: 40%;
+    height: auto;
+    border-radius: 20px;
+    display: block;
+    margin: 0 auto;
+}
+
+.kolom {
+    margin-right: 10%;
+    margin-top: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.kolom div {
+    color: white;
+    flex: 1;
+    margin: 10px;
     padding: 10px;
-    width: 200px;
-    margin: 20px auto;
-  }
-  
+    background-color: #5C5470;
+    border-radius: 5px;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.3s ease-in-out;
+}
+
+.hr {
+    height: 50px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 20px;
+    background-color: #5C5470;
+    border-radius: 5px;
+    width: 95%;
+}
+
+.form {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #5C5470;
+    border-radius: 5px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.form-heading {
+    text-align: center;
+}
+
+.form input[type="number"],
+.form input[type="text"] {
+    width: 100%;
+    padding: 10px 1px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+.form input[type="submit"] {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form input[type="submit"]:hover {
+    background-color: #B9B4C7;
+}
+
+.ulu ul {
+    margin-top: 30px;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.ulu ul li {
+    text-align: center;
+}
+
+.ulu ul li a {
+    text-decoration: none;
+    color: white;
+    border-bottom: 2px solid transparent; 
+    transition: border-bottom 0.3s ease-in-out;
+}
+
+/* Gaya untuk link di navigasi saat dihover */
+.ulu ul li a:hover {
+    border-bottom: 2px solid white;
+}
+
+/* Gaya untuk teks di footer */
+.copy {
+    color: white;
+    margin-top: 30px;
+    padding: 10px;
+    background-color: #5C5470;
+    border-radius: 5px;
+    width: 97.5%;
+    display: flex;
+    justify-content: center;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s ease-in-out;
+}
+
+
+.kolom div:hover {
+    border-bottom: 10px solid white;
+}
+
+
+/* Gaya untuk teks di footer saat dihover */
+.copy:hover {
+    border-bottom: 2px solid white;
+}
+
+/* Gaya untuk layar laptop dan perangkat berukuran lebih besar */
+@media screen and (min-width: 768px) {
+    .ulu {
+        justify-content: space-between;
+    }
+
+    .nav-container {
+        gap: 50px;
+    }
+
+    .ulu ul {
+        flex-direction: row;
+        gap: 50px;
+    }
+}
+
+/* Gaya untuk layar ponsel dan perangkat berukuran lebih kecil */
+@media screen and (max-width: 767px) {
+    .ulu ul {
+        flex-direction: column;
+        text-align: center;
+    }
+}
