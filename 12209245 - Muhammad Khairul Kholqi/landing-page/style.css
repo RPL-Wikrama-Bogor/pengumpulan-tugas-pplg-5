@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,500&family=Roboto+Slab:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.first {
+    background-color: #fff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 9999;
+    height: 90px;
+}
+
+.button1 {
+    background-color: #068FFF;
+    border: none;
+    color: #fff;
+    font-family: 'Roboto Slab', serif;
+    float: right;
+    padding: 10px;
+    border-radius: 7px;
+    margin-right: 30px;
+    margin-top: 20px;
+    letter-spacing: 1px;
+    font-size: 17px;
+}
+
+.button1:hover {
+    background-color: #0A6EBD;
+    cursor: pointer;
+}
+
+.teks-foto {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 5%;   
+}
+
+.foto img {
+    width: 500px;
+}
+
+.teks1 {
+    margin-top: 100px;
+}
+
+.span1 {
+    color: blue;
+    font-family: arial;
+    font-size: 18px;
+}
+
+.span2 {
+    font-family: 'Roboto Slab', serif;
+    font-size: 70px;
+}
+
+.span3 {
+    color: #000;
+    font-family: arial;
+    font-size: 18px;
+}
+
+.all-kotak {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 5%;
+}
+
+.kotak1 {
+    background-color: #9288F8;
+    color: #fff;
+    font-family: 'Roboto Slab', serif;
+    text-align: center;
+    width: 250px;
+    height: 100px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 7px #000;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.kotak1 p {
+    margin-top: 50px;
+}
+
+.title-laporan p {
+    text-align: center;
+    font-family: 'Roboto Slab', serif;
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+form {
+    border: 2px solid #000;
+    width: 700px;
+    height: 400px;
+    border-radius: 10px;
+    margin-top: 50px
+}
+
+.pengaduan p {
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.all-inputan {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
+    margin-top: 70px;   
+}
+
+.input9 {
+    width: 300px;
+    height: 30px;
+    padding-left: 5px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    max-width: 100%;
+}
+
+textarea {
+    width: 300px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    max-width: 100%;
+}
+
+.button2 {
+    width: 400px;       
+    height: 30px;
+    max-width: 100%;   
+    letter-spacing: 1px;
+    font-size: 17px;    
+    background-color: #068FFF;
+    border: none;
+    color: #fff;
+    font-family: 'Roboto Slab', serif;  
+    border-radius: 7px;
+    margin-top: 50px;
+}
+
+.button2:hover {
+    background-color: #0A6EBD;
+    cursor: pointer;
+}
+
+.copyright{
+    background-color: #dddddd;
+    text-align: center;
+    margin-top: 30px;
+    height: 30px;
+}
+
+.copyright p {
+    font-family: arial;
+    padding-top: 5px;
+}
+
+
+@media(max-width: 400px) {
+    .button1 {
+        padding: 5px;
+        font-size: 15px;
+        margin-top: 30px;
+    }
+}
+
+@media(max-width: 1110px) {
+    .foto img {
+        width: 400px;
+    }
+
+    .span2 {
+        font-size: 60px;
+    }
+
+    .teks1 {
+        margin-top: -1px;
+        margin-top: 80px;
+    }
+}
+
+@media(max-width: 920px) {
+    .foto img {
+        width: 350px;
+    }
+
+    .span2 {
+        font-size: 50px;
+    }
+
+    .teks1 {
+        margin-top: -1px;
+        margin-top: 70px;
+    }
+}
+
+@media(max-width: 790px) {
+    .foto img {
+        width: 300px;
+    }
+
+    .span2 {
+        font-size: 40px;
+    }
+
+    .teks1 {
+        margin-top: -1px;
+        margin-top: 50px;
+    }
+}
+
+@media(max-width: 790px) {
+    .foto img {
+        width: 250px;
+    }
+
+    .span2 {
+        font-size: 30px;
+    }
+
+    .teks1 {
+        margin-top: -1px;
+        margin-top: 50px;
+    }
+
+    .span3 {
+        font-size: 13px;
+    }
+}
+
+@media(max-width: 515px) {
+    .foto img {
+        width: 220px;
+    }
+
+    .span2 {
+        font-size: 25px;
+    }
+
+    .teks1 {
+        margin-top: -1px;
+        margin-top: 40px;
+    }
+
+    .span3 {
+        font-size: 10px;
+    }
+
+    .span1 {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 440px) {
+    .teks-foto {
+        flex-direction: column-reverse;
+    }
+
+    .foto img {
+        width: 100%;
+    }
+
+    .teks {
+        text-align: center;
+    }
+}
+
+@media (max-width: 1200px) {
+    .kotak1 {
+        width: 200px;
+    }
+
+    .kotak1 p {
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 980px) {
+    .kotak1 {
+        width: 150px;
+    }
+}
+
+@media (max-width: 760px) {
+    .kotak1 {
+        width: 120px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 466px) {
+    .all-kotak {
+        padding: 0 15%;
+    }
+}
+
+@media (max-width: 400px) {
+    .all-kotak {
+        justify-content: center;
+    }
+
+    .kotak1 {
+        width: 200px;
+    }
+}
+
+@media (max-width: 810px) {
+    form {
+        width: 600px;
+    }
+    
+    .input9 {
+        width: 200px;
+    }
+    
+    textarea {
+        width: 250px;
+    }
+}
+
+@media (max-width: 670px) {
+    .all-inputan {
+        display: block; 
+    }
+
+    form {
+        width: 500px;
+        height: 600px;
+    }
+
+    .button2 {
+        width: 300px;       
+    }
+
+    .input9 {
+        width: 300px;
+    }
+
+    .input-file {
+        margin-bottom: 20px;
+    }
+
+    textarea {
+        width: 300px;
+    }
+}
+
+@media (max-width: 550px) {
+    form {
+        width: 400px;
+    }
+
+    .button2 {
+        width: 230px;       
+    }
+
+    .input9 {
+        width: 230px;
+    }
+
+    textarea {
+        width: 230px;
+    }
+
+    .input-file {
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 470px) {
+    form {
+        width: 330px;
+    }
+}
+
+@media (max-width: 380px) {
+    form {
+        width: 300px;
+    }
+
+    .button2 {
+        width: 200px;       
+    }
+
+    .input9 {
+        width: 200px;
+    }
+
+    textarea {
+        width: 200px;
+    }
+
+    .input-file {
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 380px) {
+    form {
+        width: 270px;
+    }
+
+    .button2 {
+        width: 150px;       
+    }
+
+    .input9 {
+        width: 150px;
+    }
+
+    textarea {
+        width: 150px;
+    }
+}
+
+
+
+
+
