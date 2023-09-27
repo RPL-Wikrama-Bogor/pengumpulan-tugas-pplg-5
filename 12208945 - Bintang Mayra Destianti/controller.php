@@ -3,7 +3,7 @@ class Motor {
     private $hargaScoopy;
     private $hargaharley;
     private $hargaBeat;
-    private $listMember = ['salwa', 'tami', 'awa'];
+    private $listMember = ['bintang', 'mayra', 'awa'];
 
     public $motorYangDipilih;
     public $waktuRental;
