@@ -44,7 +44,7 @@ class BarangModel
 
   public function updateBarang($data)
   {
-    $data['tgl_kembali'] = date('Y-m-d H:i:s', strtotime($data['tgl_pinjam'] . ' +2 days'));
+   
     $barangLama = $this->getBarangById($data['id']);
     $tglKembaliDatabase = $barangLama['tgl_kembali'];
 
