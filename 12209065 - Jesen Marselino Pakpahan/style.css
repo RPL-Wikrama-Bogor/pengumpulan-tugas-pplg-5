@@ -1,0 +1,98 @@
+body{
+background-color: antiquewhite;
+}
+
+.gambar{3
+    float: right;
+    width: 400px;
+}
+
+.footer{
+    text-align: left;
+    margin-right: 520px;
+}
+
+nav ul p{
+    text-align: center;
+    
+}
+.horizontal{
+    display: flex; 
+}
+
+.content2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 300px;
+    padding: 0 12%;
+  }
+  
+  .card {
+
+    transition: 0.3s;
+    width: 300px;
+    min-height: 180px;
+    background-color: #6B728E;
+    padding: 32px;
+    margin: 3%;
+    text-align: center;
+  }
+  
+/* Reset default margin and padding */
+body, h1, h2, h3, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set background color for the body */
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+/* Center the form */
+center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;x
+}
+
+/* Style for the form container */
+form {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for labels */
+label {
+    font-weight: bold;
+}
+
+/* Style for input fields */
+input[type="text"] {
+    width: 100%;
+    padding: 10;
+    border: 1px solid black;
+    border-radius: 4px;
+    margin-bottom: 10px;
+
+}
+
+/* Style for submit button */
+button[name="submit"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[name="submit"]:hover {
+    background-color: #0056b3;
+}
