@@ -1,48 +1,50 @@
 <?php
+
 class Motor
 {
-    public $jenis,
-        $hari,
-        $nama_peminjam;
-    protected $totalPembayaran,
-        $diskon,
-        $pajak;
-    private $Vario,
-        $Beat,
-        $Aerox,
-        $listMember = ['fikry', 'jesen', 'tio', 'dion', 'azhril', 'rizki'];
+    // Properti publik
+    public $jenis, $hari, $nama_peminjam;
+    
+    // Properti proteksi
+    protected $totalPembayaran, $diskon, $pajak;
+    
+    // Properti pribadi
+    private $Vario, $Beat, $Aerox, $listMember = ['fikry', 'jesen', 'tio', 'dion', 'azhril', 'rizki'];
 
-    // menginisialisasi properti saat objek kelas Motor dibuat.
+    // Konstruktor
     function __construct()
     {
         $this->pajak = 10000;
         $this->diskon = 0.05;
     }
 
+    // Metode untuk mengatur harga motor
     public function setHarga($tipeVario, $tipeBeat, $tipeAerox)
-    // parameter penerima harga
     {
         $this->Vario = $tipeVario;
         $this->Beat = $tipeBeat;
         $this->Aerox = $tipeAerox;
     }
 
+    // Metode untuk mendapatkan daftar member
     public function getListMember()
     {
         return $this->listMember;
     }
 
-    // mengatur nama peminjam
+    // Metode untuk mengatur nama peminjam
     public function setListName($nama)
     {
         $this->nama_peminjam = $nama;
     }
 
+    // Metode untuk mendapatkan nama peminjam
     public function getListName()
     {
         return $this->nama_peminjam;
     }
 
+    // Metode untuk mendapatkan harga motor
     public function getHarga()
     {
         $dataPinjamanMotor["Vario"] = $this->Vario;
@@ -54,6 +56,7 @@ class Motor
 
 class Perental extends Motor
 {
+    // Metode untuk menghitung harga rental untuk non-member
     public function hargaRentalNonMember()
     {
         $dataHargaMotor = $this->getHarga();
@@ -62,6 +65,7 @@ class Perental extends Motor
         return $hargaRental;
     }
 
+    // Metode untuk menghitung harga rental untuk member
     public function hargaRentalMember()
     {
         $dataHargaMotor = $this->getHarga();
@@ -72,11 +76,12 @@ class Perental extends Motor
         return $hargaRental;
     }
 
+    // Metode untuk mencetak bukti rental
     public function CetakBuktiRental()
     {
-        // mengambil data harga motor
         $dataHargaMotor = $this->getHarga();
-        // memeriksa apakah nilai yang ada dalam properti $nama_peminjam (yang dapat diakses melalui $this->getListName()) terdapat dalam array yang disimpan dalam properti $listMember (yang dapat diakses melalui $this->getListMember()).
+
+        // Memeriksa apakah peminjam adalah member atau bukan
         if (in_array($this->getListName(), $this->getListMember())) {
             echo ucfirst($this->getListName()) . " berstatus sebagai Member mendapatkan <br>";
             echo "diskon sebesar 5% <br>";
