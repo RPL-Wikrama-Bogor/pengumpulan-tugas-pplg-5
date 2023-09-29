@@ -1,6 +1,6 @@
 <?php
 
-define('BASE_URL', 'http://localhost/tugasmvc/public');
+define('BASE_URL', 'http://localhost/kapemamvc/public');
 
 define('DB_HOST', 'localhost');
 define('DB_USER', 'root');
