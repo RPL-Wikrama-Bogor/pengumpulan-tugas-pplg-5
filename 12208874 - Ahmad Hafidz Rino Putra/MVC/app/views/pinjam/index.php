@@ -45,9 +45,12 @@
                         $tgl_pinjam = strtotime($row['tgl_pinjam']);
                         $selisih_hari = floor(($tgl_kembali - $tgl_pinjam) / (60 * 60 * 24));
 
-                        if ($selisih_hari == 0 || $selisih_hari == 1 || $selisih_hari > 2){
+                        if ($selisih_hari == 0 || $selisih_hari == 1 ){
                         echo '<div style="background-color: #3EC70B; height: 1.7rem; text-align: center; color: white; margin-top: 0.5rem; border-radius: 7px;">Sudah Kembali</div>';
-                        } else {
+                        } elseif ($selisih_hari > 2) {
+                            echo '<div style="background-color: black; height: 1.7rem; text-align: center; color: white; margin-top: 0.5rem; border-radius: 7px;">Telat Dikembalikan !!! </div>';
+                        } 
+                        else {
                             echo '<div style="background-color: red; height: 1.7rem; text-align: center; color: white; margin-top: 0.5rem; border-radius: 7px;">Belum Kembali</div>';
                         }
                     ?>
@@ -58,7 +61,7 @@
                         $tgl_pinjam = strtotime($row['tgl_pinjam']);
                         $selisih_hari = floor(($tgl_kembali - $tgl_pinjam) / (60 * 60 * 24));
 
-                        if ($selisih_hari != 0 && $selisih_hari != 1 ) {
+                        if ($selisih_hari == 2 && $selisih_hari >= 2 ) {
                             echo '<a href="' . BASE_URL . '/pinjam/edit/' . $row['id'] . '" class="btn btn-primary"><i class="fa-solid fa-pen-to-square"></i></a>';
                         }
                     ?>
