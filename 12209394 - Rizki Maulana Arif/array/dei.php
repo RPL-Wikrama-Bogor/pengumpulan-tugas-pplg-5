@@ -213,9 +213,15 @@ foreach ($furnitures as $furniture) {
             $hargaTotal = $selectedFurniture['harga'] * $jumlah;
             $hargaTotalR = $selectedFurniturer['harga'] * $jumlahR;
             echo '<h2>Total Harga:</h2>';
-            echo '<p>' . $selectedItem . ' x ' . $jumlah . ' = Rp ' . number_format($hargaTotal, 0, ',', '.') . '</p>';
-            echo '<p>' . $selectedItemR . ' x ' . $jumlahR . ' = Rp ' . number_format($hargaTotalR, 0, ',', '.') . '</p>';
-            echo '<p>' . $p = $hargaTotalR + $hargaTotal;
+            echo '<p>' . $selectedItem . ' x ' .' ( '.$jumlah.')</p>';
+            echo  ' Harga NON-RAKITAN ADALAH Rp ' . number_format($hargaTotal, 2, ',', '.')."<br><br>" ;
+
+          ;
+            echo '<p>' . $selectedItemR . ' x ' .' ( '.$jumlahR.')</p>';
+            echo  ' Harga NON-RAKITAN ADALAH Rp ' . number_format($hargaTotalR, 2, ',', '.')."<br><br>" ;
+          
+       
+            echo '<p> TOTAL SEMUA BARANG YAITU  ' . number_format($p = $hargaTotalR + $hargaTotal,2,',','.');
 
         }
         ?>
