@@ -12,7 +12,7 @@ echo "Jumlah tabungan: " . array_sum($tabungan) ."<br>" ;
 //pecahan uang
 echo "Dengan uang pecahan:" . implode(", " ,array_unique($tabungan)) . "<br>" ;
 
-//mencari nilai min
+//mencari nilai min 
 echo "Pecahan uang terkecil: " . min($tabungan). "<br>" ;
 
 //mencari nilai max
