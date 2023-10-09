@@ -1,0 +1,440 @@
+* {
+     font-family: Pangram-ExtraLight;
+ }
+ 
+ @font-face {
+     font-family: Pangram-ExtraLight;
+     src: url(Pangram-FullFamily-FreeForPersonalUse/Pangram-ExtraBold.otf);
+ }
+ 
+ a {
+    text-decoration: none;
+    color: black;
+ }
+ .container a {
+     float: right;
+     text-decoration: none;
+     color: black;
+     background-color: orange;
+     text-align: center;
+     padding: 15px;
+     border-radius: 20px;
+     margin: 20px;
+     margin-bottom: 50px;
+ }
+ 
+ .wrap {
+     clear: right;
+ 
+ }
+ 
+ .text {
+     width: 48%;
+     float: left;
+     padding-right: 15px;
+ }
+ 
+ .gambar {
+     width: 50%;
+     float: right;
+     
+ }
+ 
+ img {
+     width: 100%;
+ }
+ 
+ .card {
+     display: flex;
+     clear: both;
+     flex-direction: row;
+     justify-content: center;
+ }
+ 
+ .kotak {
+     width: 25%;
+     margin: 3px;
+     margin-top: 100px;
+     text-align: center;
+     background-color: orange;
+     padding: 20px;
+ 
+ }
+ 
+ .kotak h5 {
+     font-size: 20px;
+     margin: 0 !important;
+ }
+ 
+ .kotak p {
+     margin-bottom: 0 !important;
+     font-size: 16px;
+ }
+ 
+ .kotak1 {
+     margin-left: 0 !important;
+ }
+ 
+ .kotak4 {
+     margin-right: 0 !important;
+ }
+ 
+ .card1 {
+     width: 500px;
+     background: #EFEFEF;
+     color: #fff;
+     padding: 20px;
+     float: left;
+ }
+ 
+ .card h1 {
+     font-size: 20px;
+     text-align: center;
+     color: #000;
+ }
+ 
+ .form {
+     margin: 15px;
+ }
+ 
+ input {
+     width: 490px;
+     height: 25px;
+     margin: 10px 0;
+ }
+ 
+ textarea {
+     width: 490px;
+ }
+ 
+ label {
+     color: #000;
+ }
+ 
+ button {
+     background: #FFC436;
+     width: 100px;
+     padding: 5px;
+     border-radius: 5px;
+     cursor: pointer;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+     border-radius: 10px;
+     float: right;
+ }
+ 
+ button:hover,
+ button:focus,
+ button:active {
+     transform: scale(1.1);
+ }
+ 
+ /* .card2 {
+     float: right;
+ }
+  */
+ .keterangan {
+     float: right;
+     height: 50%;
+     width: 52%;
+ }
+ 
+ .keterangan h3 {
+     text-align: start;
+ }
+ 
+ .ket1 {
+     display: flex;
+     width: 95%;
+     height: 200px;
+     border: 1px solid black;
+ 
+ }
+ 
+ .ket1 .isi {
+     font-size: 15px;
+     width: 200px;
+     margin-left: 20px;
+     margin-top: 5%;
+    }
+    
+    .ket2 .isi {
+        font-size: 15px;
+        width: 200px;
+        margin-left: 15px;
+        margin-top: 5%;
+    }
+ .tanggal {
+     position: absolute;
+     right: 80px;
+     font-size: 15px;
+ }
+ 
+ .ket1 img {
+    width: 150px;
+     height: 100px;
+     margin-left: 200px;
+     margin-top: 70px;
+ }
+ 
+ .ket2 {
+     display: flex;
+     width: 95%;
+     height: 200px;
+     border: 1px solid black;
+     margin-top: 50px;
+ 
+ }
+ 
+ 
+ 
+ .ket2 img {
+     width: 150px;
+     height: 100px;
+     margin-left: 200px;
+     margin-top: 70px;
+ }
+     /* footer */
+     .content .keterangan footer {
+        background: rgb(249,248,77);
+        justify-content: center;
+        width: 205vh;
+        margin-left: -800px;
+        background: linear-gradient(90deg, rgba(249,248,77,0.3218079468115371) 0%, rgba(255,172,0,0.8204073865874475) 56%);
+        padding: 1rem 5rem;
+        padding-bottom: 1rem 0 3rem;
+        margin-top: 15rem;
+        text-align: center;
+      }
+
+
+
+
+
+    /* tablet */
+@media (max-width: 768px) {
+        html {
+          font-size: 60%;
+        }
+        .text {
+            float: left;
+            padding-right: 10px;
+        }
+        img {
+            width: 80%;
+            float: right;
+            display: flex;
+        }
+        .kotak {
+            width: 25%;
+            padding: 5px;
+        }
+        .kotak h5 {
+            font-size: 10px;
+        }
+        
+        .kotak p {
+            font-size: 10px;
+        }
+
+        .card1 {
+            width: 280px;
+            background: #EFEFEF;
+            color: #fff;
+            padding: 20px;
+            float: left;
+        }
+        input {
+            width: 270px;
+            height: 25px;
+            margin: 10px 0;
+        }
+        textarea {
+            width: 270px;
+        }
+        .keterangan {
+            float: right;
+            height: 50%;
+            width: 50%;
+            position: absolute;
+            right: 0;            
+        }
+        .ket1 .tanggal {
+            top: 30px;
+            right: 40px;
+            font-size: 10px;
+        }
+        .ket2 .tanggal {
+            top:180px;
+            right: 40px;
+            font-size: 10px;
+        }
+        .ket1 .isi {
+            font-size: 10px;
+            width: 150px;
+            margin-left: 20px;
+            margin-top:15%;
+        }
+        .ket2 .isi {
+            font-size: 10px;
+            width: 150px;
+            margin-left: 20px;
+            margin-top: 15%;
+        }
+        .ket1 img {
+            width: 100px;
+            height: 80px;
+            margin-left: 80px;
+            margin-top: 80px;
+        }
+        .ket2 img {
+            width: 100px;
+            height: 80px;
+            margin-left: 80px;
+            margin-top: 80px;
+        }
+        /* footer */
+        .content .keterangan footer {
+            justify-content: center;
+            width: 80vh;
+            margin-left: -450px;
+            padding: 1rem 5rem;
+            padding-bottom: 1rem 0 3rem;
+            margin-top: 15rem;
+            text-align: center;
+    }
+}
+/* handphone */
+@media (max-width: 450px) {
+    html {
+      font-size: 55%;
+    }
+    .container a {
+        padding: 8px;
+        border-radius: 20px;
+        margin: 0;
+        margin-bottom: 10px;
+    }
+    
+    ol {
+        display: flex;
+        width: 300px;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 0px;
+        
+    }
+    
+    li {
+        flex: 1;
+        margin: 10px;
+    }
+    .wrap {
+        position: relative;
+        display: flex;
+        align-items: center; /* Untuk mengatur vertikal di tengah */
+        height: 50vh; /* Untuk mengisi tinggi viewport */
+      }
+      .text {
+        margin-bottom: -350px;
+        float: left;
+      }
+      
+      
+      .gambar {
+        position: absolute;
+        top: 0;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+      }
+      
+      /* Untuk mengatur ukuran gambar agar sesuai dengan parent */
+      .gambar img {
+        width: 100%;
+        height: 50%;
+        object-fit: cover; /* Untuk menjaga proporsi aspek gambar */
+      }
+      .kotak {
+        margin-top: 180px;
+        width: 25%;
+        padding: 7px;
+    }
+    .kotak h5 {
+        font-size: 8px;
+    }
+    
+    .kotak p {
+        font-size: 10px;
+    }
+
+    .card1 {
+        margin-top: 390px;
+        width: 280px;
+        background: #EFEFEF;
+        color: #fff;
+        padding: 20px;
+        align-items: center;
+    } 
+    
+    .tanggal {
+        position: absolute;
+        right: 40px;
+        font-size: 10px;
+    }
+    .ket1 .isi {
+        font-size: 10px;
+        width: 100px;
+        margin-left: 20px;
+        margin-top: 15%;
+    }
+    
+    .ket2 .isi {
+        font-size: 10px;
+        width: 100px;
+        margin-left: 20px;
+        margin-top: 15%;
+    }
+    .ket1 img {
+        width: 100px;
+        height: 80px;
+        margin-left: 80px;
+        margin-top: 0;
+    }
+    .ket1 {
+        margin-top: 10px;
+        display: flex;
+        width: 180%;
+        margin-left: -175px;
+        align-items: center;
+        height: 140px;
+        border: 1px solid #000;
+
+    }
+    .ket2 {
+        margin-top: 10px;
+        display: flex;
+        width: 180%;
+        margin-left: -175px;
+        align-items: center;
+        height: 140px;
+        border: 1px solid #000;
+    }
+    .ket2 img {
+        width: 100px;
+        height: 80px;
+        margin-left: 80px;
+        margin-top: 0;
+    }
+
+    .content .keterangan footer {
+        justify-content: center;
+        width: 40vh;
+        margin-left: -200px;
+        padding: 1rem 5rem;
+        padding-bottom: 1rem 0 3rem;
+        margin-top: 75rem;
+        align-items: center;
+        text-align: center;
+ }
+  
+}
