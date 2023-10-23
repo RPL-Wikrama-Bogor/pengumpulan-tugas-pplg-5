@@ -15,13 +15,13 @@
 
     <?php
     if (isset($_POST['cek'])) {
-        // Mengambil suhu dalam satuan Fahrenheit dari form
+        
         $fahrenheit = $_POST['fahrenheit'];
 
-        // Mengonversi suhu dari Fahrenheit ke Celsius
+        
         $celsius = ($fahrenheit - 32) * 5/9;
 
-        // Menentukan cuaca berdasarkan suhu
+       
         $cuaca = '';
 
         if ($celsius > 30) {
@@ -32,7 +32,7 @@
             $cuaca = 'normal';
         }
 
-        // Menampilkan hasil
+       
         echo "<h2>Hasil Cek Cuaca</h2>";
         echo "Suhu dalam Fahrenheit: $fahrenheit °F<br>";
         echo "Suhu dalam Celsius: " . number_format($celsius, 2) . " °C<br>";

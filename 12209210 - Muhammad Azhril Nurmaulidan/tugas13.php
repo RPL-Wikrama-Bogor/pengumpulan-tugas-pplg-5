@@ -1,9 +1,16 @@
 <?php
-
-$i = 1;
-
-while ($i >= 50) {
-}for ($i=1; $i >= 50; $i++) { 
-    $i++;
+echo"while  :";
+$bilangan = 1;
+while ($bilangan <= 50) {
+    echo $bilangan . " ";
+    $bilangan++;
 }
+?>
+<br>
+<?php
+echo"for  :";
+for ($bilangan = 1; $bilangan <= 50; $bilangan++) {
+    echo $bilangan . " ";
+}
+
 ?>

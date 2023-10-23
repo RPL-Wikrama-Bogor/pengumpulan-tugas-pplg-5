@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemilihan Jurusan</title>
+    <style>
+
+        body {
+            background-color: #FFF3DA;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 20px;
+        }
+
+        .text {
+            flex: 1;
+            padding: 20px;
+        }
+
+
+        img {
+            width: 500px;
+            max-width: 100%;
+            float: right;
+            margin-right: -125px;
+        }
+        .kolom{
+         clear: right;
+         width: 323px;
+         height: 100px;
+         background-color: #FFC6AC;
+         margin: 5px;
+         box-sizing: border-box;
+         padding: 10px;
+         display: flex;
+         float: left;
+         margin-top:100px;
+       }
+       
+       button {
+            float: right;
+            background-color: #FFC6AC;
+            text-decoration: black;
+            padding: 8px 15px;
+            border-radius: 50px;
+            margin-bottom: 40px;
+       }
+       .daftar {
+            float: left;
+       }
+       
+
+       @media screen and (width:337px) {
+        img {
+            width: 250px;
+            position: absolute;           
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1;
+        }
+
+        .text {
+            padding: 200px;
+            font-size: small;
+            position: relative;
+            z-index: 2;
+            margin: 0 auto;
+            
+        }
+        .text h1 {
+            font-size:large;
+            width : 200%;
+        }
+        .text p {
+            width: 300%;
+        }
+        .daftar {
+            width: 150px;
+        }
+        .kolom {
+            margin-top: 5px;
+        }
+        .baris {
+            margin-top : -60%;
+        }
+        
+    }
+
+       
+    </style>
+</head>
+<body>
+    
+  <button>Administrator</button><br><br>
+
+    <div class="container">
+        <div class="text">
+            <h1>Jurusan SMK Wikrama Bogor</h1>
+            <p>1. Pengembangan Perangkat Lunak dan Gim</p> 
+            <p>2. Desain Komunikasi Visual</p> 
+            <p>3. Manajemen Perkantoran Dan Layanan Bisnis</p> 
+            <p>4. Tekhnik Komputer Jaringan Dan Tekonologi</p> 
+            <a href="formulir.html">
+                <button class="daftar">Daftar Sekarang?</button>
+            </a>
+        <br>
+        </div>
+        
+            <img src="rpl1 (1).jpg" alt="">
+    </div>
+    
+    <section class="baris">
+      <div class="kolom kolom1">Kuota PPLG = 200 Siswa</div>
+      <div class="kolom kolom2">Kuota DKV = 150 Siswa</div>
+      <div class="kolom kolom3">Kuota MPLB = 100 Siswa</div>
+        <div class="kolom kolom4">Kuota TJKT = 180 Siswa</div>
+   </section>
+
+    
+
+</div>
+</body>
+</html>

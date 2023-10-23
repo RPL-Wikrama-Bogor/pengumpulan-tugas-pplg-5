@@ -1,0 +1,44 @@
+.tabel{
+    display: grid;
+    height: 200px;
+    align-content: center;
+    background-color: yellow;
+    }
+    img{
+       
+
+    }
+    button{
+        float: right;
+        background-color: bisque;
+        border-radius: 6px;
+    }
+
+.baris{
+box-sizing: border-box;
+}
+
+.kolom{
+width: 50%;
+height: 100px;
+background-color: yellow;
+margin: 3px;
+box-sizing: border-box;
+float: left;
+padding: 9px;
+text-align: center;
+}
+
+h2{font-size: 10px;}
+p{font-size: 9px}
+
+h2{
+    font-size: 19px;
+}
+p{
+    font-size: 16px;
+}
+
+.submit{
+    float : left;
+}
