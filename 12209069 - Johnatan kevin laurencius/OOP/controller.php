@@ -10,7 +10,7 @@ class Motor
     private $Scoopy,
         $CBR,
         $Ninja,
-        $listMember = ['sufyan', 'okta', 'kevin', 'angger', 'kholqi', 'abyan'];
+        $listMember = ['aria', 'kevin', 'azhril', 'abyan', 'angger'];
 
     function __construct()
     {
