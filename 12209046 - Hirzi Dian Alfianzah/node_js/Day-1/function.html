@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 1 function</title>
+  </head>
+  <body>
+    <script>
+      // Pure Function
+      let nama = "Hirzi";
+      function printText(nama) {
+        console.log("Hello Word! Nama Saya " + nama);
+      }
+      printText(nama);
+
+      //
+      let printText2 = (nama) => {
+        console.log("Hello Word! Nama saya " + nama);
+      };
+      printText2(nama);
+
+      // First-class Function
+      let printHello = function (nama) {
+        console.log("Hello Word! Nama saya " + nama);
+      };
+      printHello(nama);
+
+      // Penggunaan Default Value
+      let printHello2 = function (nama = "Pengunjung") {
+        console.log("Hello Word! Nama saya " + nama);
+      };
+      printHello2(nama);
+
+      //
+      let harga = 1000;
+      let margin;
+      let hargaJual = harga + (margin || 500);
+      let hargaJual2 = harga + (margin ?? 500);
+
+      console.log(hargaJual);
+      console.log(hargaJual2);
+
+      // Transformasi array
+      let angka = [1, 2, 3, 4, 5];
+      let angkaBaru = angka.map((angka) => angka * 2);
+      console.log(angkaBaru);
+
+      let angkaGanjil = angka.filter((angka) => angka % 2 == 1);
+      console.log(angkaGanjil);
+
+      let number1 = 1;
+      let text1 = "1";
+
+      console.log(number1 == text1);
+      console.log(number1 === text1);
+
+      let sumAngka = angka.reduce(
+        (accumulator, currentValue) => accumulator + currentValue,
+        0
+      );
+      console.log(sumAngka);
+
+      // forEach
+      let buah = ["apple", "pisang", "melon"];
+      buah.forEach((buah) => console.log(buah));
+
+      let huruf = ["c", "b", "d", "e"];
+      huruf.sort();
+      console.log(huruf);
+
+      let hasil = huruf.find((hasil) => hasil === "z");
+      console.log(hasil);
+    </script>
+  </body>
+</html>
