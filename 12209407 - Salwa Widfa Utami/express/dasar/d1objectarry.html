@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object dan Array</title>
+</head>
+<body>
+    <script>
+
+        //array splice
+        let angka = [1,2,3,4,5]; 
+        // fungsinya untuk menghapus index ke 2 dan menghapus dua angka lalu mengganti angkanya menjadi 10, 11
+        angka.splice(2, 2, 10, 11);
+        //fungsiny untuk menambahkan angka 10 di index ke 2
+        angka.splice(2,0,10);
+        // menghapus array
+        angka.shift();
+        //menambah array
+        angka.push(1);
+        //menjumlah kan angka didalam array
+        // angka.reduce(), array_sum
+
+        const _fruits = new Array('apel', 'pisang', 'semangka')
+        console.log(_fruits)
+        // menambah dan menghapus element dalam array
+        _fruits.push("jeruk")//menghapus "jeruk" ke akhir array
+        console.log(_fruits)
+        _fruits.pop() //menghapus elemen terakhir pda arry
+        console.log(_fruits)
+        _fruits.shift() //menghapus elemen pertama pda arry
+        console.log(_fruits)
+        _fruits.splice(1,0,"melon") //menambah element di tengah array
+        console.log(_fruits)
+
+        //menghitung jumlah panjang array 
+        console.log(_fruits.length)
+
+        //mengembalikan nilai index element
+        console.log(_fruits.indexOf('pisang'))
+        console.log(_fruits.indexOf('semangka')) //jika tdk 
+
+        const _numbers = new Array(0,1,2,3,4)
+        //membuat salinan potongan array
+        const _newNumbers = _numbers.slice(2,4)
+        console.log(_newNumbers)
+
+        //Menggabungkan 2 array 
+        const _fruits2 = ['lengkeng', 'melon']
+        const _mergedFruits = _fruits.concat(_fruits2)
+        console.log(_mergedFruits)
+
+        //deklarasi object
+        let _person = {
+            name: "Jhon Doe",
+            age: 30,
+            isMaried: false
+        }
+        //Akses Properti 
+        console.log(_person.name)
+        console.log(_person['age'])
+
+        //Menghapus Properti Object
+        console.log('Sebelum menghapus : ')
+        console.log(_person)
+        delete _person.isMaried
+        console.log('Setelah menghapus : ')
+        console.log(_person)
+
+        //Property Shorthand
+        const _jenis = 'persegi'
+        const _panjang = 30
+        const _lebar = 30
+
+        const _bangunDatar = { _jenis, _panjang, _lebar}
+
+        //Property Existence, memeriksa properti dalam object
+        let _student = {
+            name: "Jhon Cena",
+            age: 30,
+            className: 'RPL'
+        }
+
+        console.log("name" in _student)
+        console.log("genre" in _student)
+        console.log(_student.hasOwnProperty("name"))
+        console.log(_student.hasOwnProperty("genre"))
+
+    </script>
+</body>
+</html>
