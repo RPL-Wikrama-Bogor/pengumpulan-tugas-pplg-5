@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 1 Objec And Array</title>
+  </head>
+  <body>
+    <script>
+      const __fruits = new Array("apple", "pisang", "melon");
+      console.log(__fruits); 
+      
+      //Menambahkan dan menghapus element dalam array
+      __fruits.push("jeruk"); //menambah element terahir pada array
+      console.log(__fruits);
+
+      __fruits.pop(); //menghapus element terahir pada array
+      console.log(__fruits);
+
+      __fruits.shift(); //menghapus elemnt pertama pada array
+      console.log(__fruits);
+
+      __fruits.splice(1,0, "melon")// menambah element di tengah array
+      console.log(__fruits)
+
+      //menghitung jumlah panjang array
+      console.log(__fruits.length)
+ 
+      //mengambilkan nilai index element
+      console.log(__fruits.indexOf("pisang"));
+      console.log(__fruits.indexOf("melon"));//jika tidak tidak ditemukan akan bernilai -1
+        const __numbers = new Array(0,1,2,3,4)
+
+      //membuat salinan potongan array
+      const __newNumbers = __newNumbers.splice(2,4)
+      console.log(__newNumbers)
+
+      //menggabungkan 2 array
+      const __fruits2 = ['jeruk', 'mangga']
+      const __mergedFruits = __fruits.concat(__fruits2)
+      console.log(__mergedFruits)
+
+      //deklarasi object
+      let _person = {
+        name: "Kalenyyy",
+        age: 20,
+        isMaried: false
+      }
+
+      console.log(person.name);
+      console.log(_person['age']);
+
+      //menghapus properti object
+      console.log('sebelum menghapus: ');
+      console.log(_person);
+      delete _person.isMaried
+      console.log('seteleh menghapus: ');
+      console.log(_person);
+
+      // property shorthand
+      const _jenis = 'persegi'
+      const _panjang = 30
+      const _lebar = 30
+
+      const bangunDatar = {_jenis, _panjang, _lebar}
+      console.log(bangunDatar);
+
+      // property existence, memeriksa properti dalam object
+      let _student = {
+        name: "Jhon Cena",
+        age: 30,
+        className: "RPL"
+      }
+
+      console.log("name" in _student);
+      console.log("genre" in _student);
+      console.log(_student.hasOwnProperty("name"));
+      console.log(_student.hasOwnProperty("genre"));
+
+
+    </script>
+  </body>
+</html>

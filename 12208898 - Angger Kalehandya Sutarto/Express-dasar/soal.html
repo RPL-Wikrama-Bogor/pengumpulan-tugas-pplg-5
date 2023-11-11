@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // buatlah sebuah fungsi javascript yg menggunakan filter untuk mengembalikan daftar buku dengan genre 'fiction'
+      const books = [
+        {
+          title: "Harry Potter and the sorcerer's Stone",
+          author: 'J.K. Rowling',
+          genre: 'Fantasy',
+          year: 1997
+        },
+        {
+          title: 'To Kill a Mockingbird',
+          author: 'Harpen Lee',
+          genre: 'fiction',
+          year: 1960
+        },
+        {
+          title: 'The Great Gatsby',
+          author: 'F. Scott Fitzgerald',
+          genre: 'fiction',
+          year: 1925
+        }
+      ]
+
+      let filterBook = books.filter(books => books.genre === 'fiction')
+
+      filterBook.forEach((books) => {
+        console.log(books.title);
+      })
+
+
+      // buatlah sebuah fungsi menggunakan map untuk mengembalikan daftar barang dengan harga diskon 10%
+      const produks = [
+        {
+            name: "laptop",
+            price: 1000
+        },
+        {
+            name: "smartphone",
+            price: 500
+        },
+        {
+            name: "tablet",
+            price: 300
+        }
+      ]
+
+      let diskonProduk = produks.map((produks) => produks.price - (produks.price * 0.1))
+      let x = 0
+
+      produks.forEach((produks) => {
+        console.log(`${produks.name} seharga $ ${diskonProduk[x++]}`);
+      })
+
+      // buatlah sebuah fungsi untuk menyatakan array produks dan newproduct lalu tampilkan rata-rata harganya
+      const newProduct = [
+        {
+            name: "kulkas",
+            price: 200
+        },
+        {
+            name: "TV",
+            price: 300
+        }
+      ]
+
+      const mergeProduct = produks.concat(newProduct)
+      let sumHarga = mergeProduct.map((mergeProduct) => mergeProduct * 2) 
+      console.log(sumHarga);
+      mergeProduct.forEach((mergeProduct) =>  {
+        
+      })
+      
+    </script>
+  </body>
+</html>
