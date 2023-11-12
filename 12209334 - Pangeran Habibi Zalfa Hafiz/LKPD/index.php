@@ -1,0 +1,11 @@
+<a href="soal-no-4.php">4</a>
+<a href="soal-no-5.php">5</a>
+<a href="soal-no-6.php">6</a>
+<a href="soal-no-7.php">7</a>
+<a href="soal-no-8.php">8</a>
+<a href="soal-no-9.php">9</a>
+<a href="soal-no-10.php">10</a>
+<a href="soal-no-11.php">11</a>
+<a href="soal-no-12.php">12</a>
+<a href="soal-no-13.php">13</a>
+<a href="soal-no-14.php">14</a>

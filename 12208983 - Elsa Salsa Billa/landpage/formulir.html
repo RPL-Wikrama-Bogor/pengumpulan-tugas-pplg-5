@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar Menjadi Bagian Wikrama</title>
+</head>
+<body>
+    <style>
+        body {
+            background-color: #FFF3DA;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .card {
+            max-width: 300px;
+            height: 100%;
+            border: 1px solid #7E1717;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            background-color: #FFC6AC;
+            margin-top: 100px;
+        }
+        .klick{ 
+            width: 100px;
+            margin-top: 25px;
+            border-radius: 30px;
+       }
+       label {
+            float: left;
+            width: 300px; 
+            margin-right: -5px; 
+       }
+        input {
+            width: 200px;
+        }
+
+        @media screen and (width:337px) {
+            .card {
+                max-width: 250px;
+                
+            }
+            label {
+            float: left;
+            width: 250px;    
+            }
+        }
+        
+
+    </style>
+
+<center>
+<div class="card">
+    <h2>Formulir Jurusan</h2>
+    <form action="" method="post">
+        <label for="nama">Nama : </label>
+        <input type="text" name="nama" id="nama" required>
+        <br>
+        <label for="email">Email : </label>
+        <input type="email" name="email" id="email" required>
+        <br>
+        <label for="jurusan">Jurusan:</label>
+        <input type="text" name="jurusan" id="jurusan" required>
+        <br>
+        <br>
+        <label for="gambar">(Bukti-Pembayaran)</label>
+        <input type="file" name="gambar" id="gambar" required>
+        <br><br>
+        <label for="pesan">Pesan :</label>
+        <textarea id="pesan" name="pesan" rows="4" required></textarea><br><br>
+        <button class="klick" type="submit" name="submit" >Kirim</button>
+    </form>
+</body>
+</html>
