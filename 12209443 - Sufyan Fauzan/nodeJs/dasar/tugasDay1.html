@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <script>
+      const books = [
+        {
+          title: "Harry Potter and the Sorcerer's Stone",
+          author: "J.K. Rowling",
+          genre: "Fantasy",
+          year: 1997,
+        },
+        {
+          title: "To Kill a Mockingbird",
+          author: "Harper Lee",
+          genre: "Fiction",
+          year: 1960,
+        },
+        {
+          title: "The Freat Gatsby",
+          author: "F. Scott Fitzgerald",
+          genre: "Fiction",
+          year: 1925,
+        },
+      ];
+
+      // console.log(genre);
+      let genre = books.filter((books) => books.genre === "Fiction");
+      genre.forEach((genre) => console.log(genre.title));
+
+      let genreFiction = genre.map((genre) => genre.title);
+      console.log(genreFiction);
+
+      //----------------------------------------------------------------
+
+      const products = [
+        {
+          name: "Laptop",
+          price: 1000,
+        },
+        {
+          name: "Smartphone",
+          price: 500,
+        },
+        {
+          name: "Tablet",
+          price: 300,
+        },
+      ];
+
+      const HargaDiskon = products.map((product) => ({
+        name: product.name,
+        price: product.price * 0.9,
+      }));
+      HargaDiskon.forEach((product) => {
+        console.log(`${product.name} seharga $${product.price}`);
+      });
+
+      const newProduct = [
+        {
+          name: "Kulkas",
+          price: 200,
+        },
+        {
+          name: "TV",
+          price: 300,
+        },
+      ];
+
+      const ProdukTambahan = products.concat(newProduct);
+      let totalHarga = 0;
+
+      ProdukTambahan.forEach((product) => {
+        console.log(`${product.name}`);
+        totalHarga += product.price;
+      });
+
+      console.log("Total harga semua produk: $" + totalHarga);
+    </script>
+  </body>
+</html>
