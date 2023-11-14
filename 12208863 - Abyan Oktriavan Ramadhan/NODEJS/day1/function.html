@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function</title>
+</head>
+<body>
+    <script>
+        let u = "Abyan"
+
+        function printText(nama){
+            console.log("Hello World! my namw is " + nama)
+        }
+
+        printText("abyan")
+
+        let printText2 = (nama) => {
+            console.log("Hellow World! nama saya " + nama)
+        }
+        printText2(u)
+
+        let printText3 = function printText(nama = "npc"){
+            console.log("Hello wou " + nama)
+        }
+        printText3()
+
+        let harga = 1000
+        let margin
+        let hargaJual = harga + (margin || 500)
+        console.log(hargaJual)
+
+        let angka = [1, 2, 3, 4, 5]
+        let angkaBaru = angka.map((angka) => angka *2)
+        
+        console.log(angkaBaru)
+        
+        let angkaGanjil = angka.filter((angka) => angka % 2 === 1)
+        console.log(angkaGanjil)
+
+        let number1 = 1
+        let text1 = "1"
+
+        console.log(number1 == text1)
+        console.log(number1 === text1)
+
+        // menjumlahkan number dalam array
+        let sumAngka = angka.reduce((accumulator, currentValue) => accumulator + currentValue)
+        console.log(sumAngka)
+
+        let buah = ['aple', 'pisang', 'semangka']
+        buah.forEach((buah) => console.log(buah))
+
+        let huruf = ['c', 'b', 'a', 'z']
+        huruf.sort();
+        console.log(huruf)
+
+        let hasil = huruf.find((hasil) => hasil === 'z')
+        console.log(hasil)
+
+        // buah buahan
+
+        const _fruits = new Array('apel', 'pisang', 'semangka')
+        console.log(_fruits)
+        // menambahkan dan menghapus element dalam array
+        _fruits.push("jeruk") // menambah "jeruk ke akhir array
+        console.log(_fruits)
+        _fruits.pop() // menghapus elemetn terakhir pada array
+        console.log(_fruits)
+        _fruits.shift() //menghapus element pertama pada array
+        console.log(_fruits)
+        _fruits.splice(1,0, "melon") // menambah element di tengah array
+        console.log(_fruits)
+
+        // menghitung jumlah panjang pada array
+        console.log(_fruits.length)
+
+        // mengambil nilai index element
+        console.log(_fruits.indexOf('pisang'))
+        console.log(_fruits.indexOf('semangka')) // jiak tidak di temukan akan bernilai -1
+
+        const _numbers = new Array (0,1,2,3,4)
+        // membuat salinan potongan array
+        const _newNumbers = _numbers.slice(2,4)
+        console.log(_newNumbers)
+
+        // mengabungkan 2 array
+        const _fruits2 = ['lengkeng', 'melon']
+        const _margeFurits = _fruits.concat(_fruits2)
+        console.log(_margeFurits)
+
+        // deklarasi object
+        let _person = {
+            name: "Abyan",
+            age: 30,
+            inMaried: false
+        }
+
+        // akses properti
+        console.log(_person.name)
+        console.log(_person['age'])
+
+        // menghapus properti object
+        console.log('sebelum menghapus: ')
+        console.log(_person)
+        delete _person.inMaried
+        console.log('setelah menghapus: ')
+        console.log(_person)
+
+        // property shorthand
+        const _jenis = 'persegi'
+        const _panjang = 30
+        const _lebar = 30
+
+        const _bangunDatar = { _jenis, _panjang, _lebar }
+        console.log(_bangunDatar)
+
+        // property existence, memeriksa properti dalam object
+        let _student = {
+            name: "abyan",
+            age: 30,
+            className: 'RPL'
+        }
+
+        console.log("name" in _student)
+        console.log("genre" in _student)
+        console.log(_student.hasOwnProperty("name"))
+        console.log(_student.hasOwnProperty("genre"))
+
+        
+    </script>
+</body>
+</html>

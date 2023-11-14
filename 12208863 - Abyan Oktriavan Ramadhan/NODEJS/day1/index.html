@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>day 1</title>
+</head>
+<body>
+    <script>
+        let numbers = 1
+        var text1 = 'Hello World!' // var sifatnya global jarang di pakai
+        let text2 = "Abyan is here"
+        // klo pake backtik bisa menaruh sebuah function
+        const text3 = `and now iam at SMK Wikrama Bogor`
+
+        let boolean = true
+
+        console.log(numbers)
+        console.log(text1)
+        console.log(text2)
+        console.log(text3)
+        console.log(boolean)
+
+        let tidakAdaNilai = null
+        console.log(tidakAdaNilai)
+
+        let nilaiBelumDiisi
+        console.log(nilaiBelumDiisi)
+
+        let simbol = Symbol('deskripsi-simbol')
+        console.log(simbol)
+
+        let array = ['apple', 'semangka', 'jeruk']
+
+        function tambah(a, b){
+            console.log(a+b)
+        }
+
+        let siswa = {
+            nama: "abyan",
+            usia: 17,
+            asal: "psm",
+        }
+
+        console.log(siswa)
+
+        let number1 = 10
+        let number2 = 4
+
+        console.log(number1 + number2)
+        console.log(number1 - number2)
+        console.log(number1 * number2)
+        console.log(number1 / number2)
+        console.log(number1 % number2)
+
+        console.log(number1 == number2)
+        console.log(number1 != number2)
+        console.log(number1 > number2)
+        console.log(number1 < number2)
+        console.log(number1 >= number2)
+        console.log(number1 <= number2)
+
+        console.log(number1 != number2 && number1 > number2)
+        console.log(number1 == number2 || number1 != number2)
+
+        number1 = number1 + number2
+        console.log(number1)
+        number1 += number2 
+        console.log(number1)
+
+        let object= {}
+        let cekObject = object?.nama
+        console.log(cekObject)
+        
+        // kondisi
+        
+        let umur = 18
+        let status = (umur => 18) ? "Dewasa" : "anak-anak"
+        console.log(status)
+
+        if(siswa.usia >= 18){
+            console.log("Dewasa")
+        } else if(siswa.usia >= 12){
+            console.log("Remaja")
+        } else {
+            console.log("Anak - anak")
+        }
+
+        // switch
+
+        switch (siswa.asal){
+            case "psm":
+                console.log("rumah")
+                break;
+            case "SMK Wikrama":
+                console.log("sekolah")
+                break;
+            default:
+                console.log("umum")
+        }
+    </script>
+</body>
+</html>
