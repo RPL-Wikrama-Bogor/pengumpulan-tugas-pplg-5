@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 1 Objec And Array</title>
+  </head>
+  <body>
+    <script>
+      const __fruits = new Array("apple", "pisang", "melon");
+      console.log(__fruits); //Menambahkan dan menghapus element dalam array
+
+      __fruits.push("jeruk"); //menghapus element terahir pada array
+      console.log(__fruits);
+
+      __fruits.pop(); //menghapus element terahir pada array
+      console.log(__fruits);
+
+      __fruits.shift(); //menghapus elemnt pertama pada array
+      console.log(__fruits);
+
+      __fruits.splice(1, 0, "melon"); //Menambahkan elemen di tengah
+      console.log(__fruits);
+
+      //menghitung jumlah panjang array menggunakan length
+      console.log(__fruits.length);
+
+      //mengambilkan nilai index element
+      console.log(__fruits.indexOf("pisang"));
+      console.log(__fruits.indexOf("melon")); //jika tidak tidak ditemukan akan bernilai -1
+      const __numbers = new Array(0, 1, 2, 3, 4);
+
+      //membuat salinan potongan array
+      const __newNumbers = [1, 2, 3, 4, 5, 6, 7, 8];
+      __newNumbers.splice(2, 4);
+      console.log(__newNumbers);
+
+      //menggabungkan 2 array
+      const __fruits2 = ["jeruk", "mangga"];
+      const __mergedFruits = __fruits.concat(__fruits2);
+      console.log(__mergedFruits);
+
+      //deklarasi objek
+      let _person = {
+        name: "Hirzi",
+        age: "16",
+        isMaried: true,
+      };
+
+      //Akses Properti
+      console.log(_person.name);
+      console.log(_person["age"]);
+
+      //menghapus properti
+      console.log("sebelum menghapus: ");
+      console.log(_person);
+      delete _person.isMaried;
+      console.log("Setelah menghapus: ");
+      console.log(_person);
+
+      //Property Shorthand 
+      const _jenis = "persegi";
+      const _panjang = 30;
+      const _lebar = 30;
+
+      const _bangunDatar = { _jenis, _panjang, _lebar };
+      console.log(_bangunDatar);
+
+      //property existence, memeriksa properti dalam object
+      let _student = {
+        name: "Hirzi",
+        age: 17,
+        className: "PPLG",
+      };
+
+      console.log("name" in _student);
+      console.log("genre" in _student);
+      console.log(_student.hasOwnProperty("name"));
+      console.log(_student.hasOwnProperty("genre"));
+    </script>
+  </body>
+</html>
