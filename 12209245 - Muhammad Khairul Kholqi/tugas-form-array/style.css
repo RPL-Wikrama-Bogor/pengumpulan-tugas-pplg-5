@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto+Slab:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.furniture-box {
+    border: 3px solid #000;
+    width: 700px;
+    padding: 30px 0;
+    margin-top: 30px;
+    border-radius: 15px;
+    margin-left: 300px;
+}
+
+.judul {
+    font-size: 30px;
+    font-family: 'Roboto Slab', serif;
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.no-barang, .harga-barang {
+    margin-left: 100px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.all-pembelian {
+    border: 3px solid #000;
+    width: 700px;
+    padding: 30px 0;
+    margin-top: 30px;
+    border-radius: 15px;
+    margin-left: 300px;
+    margin-bottom: 50px;
+}
+
+.title-pembelian {
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Roboto Slab', serif;
+    margin-bottom: 50px;
+}
+
+span {
+    margin-left: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button {
+    width: 400px;
+    margin-left: 150px;
+    margin-top: 20px;
+    height: 30px;
+    border: none;
+    background-color: #068FFF;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0A6EBD;
+}
+
+.hasil-pembelian {
+    text-align: center;
+    border: 3px solid #000;
+    width: 700px;
+    padding: 30px 0;
+    margin-top: 30px;
+    border-radius: 15px;
+    margin-left: 300px;
+    margin-bottom: 50px;
+}
+
+.bukti {
+    font-size: 30px;
+    font-family: 'Roboto Slab', serif;
+    margin-bottom: 50px;
+}

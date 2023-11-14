@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahaahahahahahaha</title>
+</head>
+<body>
+    <script>
+        let varNama = "Komar"
+        function printText(nama) {
+            console.log("Hello Wolrd! Nama Saya " + nama);
+        }
+        printText(varNama)
+
+        let printText2 = (nama) => {
+            console.log("hello wolrd! nama saya " + nama);
+        }
+        printText2(varNama)
+
+        let printHello = function printText(nama = 'Pengunjung') {
+            console.log("hello wolrd! nama saya " + nama);
+        }
+        printHello()
+
+        // 
+        let harga = 1000
+        let margi
+
+        let hargaJual1 = harga + (margi || 500)
+        let hargaJual2 = harga + (margi ?? 500)
+        console.log(hargaJual2);
+        console.log(hargaJual1);
+
+        // 
+        let angka = [1, 2, 3, 5, 6]
+        let angkaBaru = angka.map((angka) => angka *2)
+        console.log(angka);
+
+        let angkaGanjil = angka.filter((angka) => angka % 2 === 1)
+        console.log(angkaGanjil);
+
+        let number1 = 1
+        let text1 = "1"
+
+        console.log(number1 == text1);
+        console.log(number1 === text1);
+
+        //
+
+        let sumAngka = angka.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+        console.log(sumAngka);
+
+        //foreach
+        let buah =['apple', 'manggis', 'jeruk', 'kolak']
+        buah.forEach((buah) => console.log(buah))
+
+        let huruf = ['c', 'b', 'a', 'z']
+        huruf.sort()
+        console.log(huruf);
+
+        let hasil = huruf.find((hasil) => hasil === 'z')
+        console.log(hasil);
+
+    </script>
+</body>
+</html>

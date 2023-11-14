@@ -1,0 +1,268 @@
+body{
+  background-color: rgb(173, 173, 183);
+}
+
+h5{
+    background-color: rgb(198, 11, 11);
+    padding: 10px;
+    float: right;
+    border-radius: 50px;
+    color: black;
+    text-decoration: none;
+}
+
+.teks{
+    clear: right;
+}
+
+.teks h2{
+    clear: right;
+    margin-left: 15%;
+}
+
+.tulisan{
+    float: left;
+    margin-left: 2%;
+}
+
+.foto{
+    float: right;
+}
+
+img{
+    width:600px;
+    border-radius: 5%;
+}
+
+
+
+
+  .card-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 1200px;
+    margin-left: 25px;
+    padding-top: 30px;
+  }
+
+  .card {
+    background-color: rgb(11, 92, 198);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    margin-right: 20px;
+
+  }
+
+  .card1 {
+    background-color:  rgb(198, 11, 11);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    margin-right: 20px;
+
+  }
+  
+
+  .card:last-child {
+    margin-right: 0;
+  }
+
+  h2 {
+    margin-top: 0;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+
+  
+/* form */
+.card-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  background-color: #9c9a9a;
+  padding: 20px;
+  border-radius: 5px;
+  width: 350px;
+  margin: left;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+.card-form h2 {
+  margin-bottom: 15px;
+}
+
+.card-form form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  width: 100%;
+  max-width: 300px;
+}
+
+
+
+.card-form label {
+  font-weight: bold;
+}
+
+.card-form input,
+.card-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #000000;
+  border-radius: 5px;
+}
+
+.card-form textarea {
+  resize: vertical;
+}
+
+.card-form button {
+  align-self: flex-start;
+  padding: 10px 15px;
+  background-color:  rgb(198, 11, 11);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card-form button:hover {
+  background-color: #ff0101;
+}
+
+.pengaduan {
+  align-items: center;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+/* Footer styling */
+.footer {
+  margin-top: 15px;
+  border-top: #000000;
+  border-bottom: #000000;
+  text-align: center;
+  background-color:grey;
+  color: black;
+  padding: 20px;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+
+.card-pengaduan{
+  float: right;
+  margin-top: -25rem;
+  margin-right: 8px;
+}
+
+.card-pengaduan h2 {
+  margin-bottom: 15px;
+}
+
+.card-pengaduan table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.card-pengaduan th,
+.card-pengaduan td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.card-pengaduan th {
+  background-color: #f0f0f0;
+  font-weight: bold;
+}
+
+.card-pengaduan tbody tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.card-pengaduan tbody tr:hover {
+  background-color: #ddd;
+}
+
+
+
+
+
+/* RESPONSIP CUI */
+@media only screen and (max-width: 768px) {
+
+
+  .teks {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+
+  .teks h2 {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .tulisan, .foto {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  img {
+    width: 100%;
+  }
+
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0;
+    padding-top: 15px;
+  }
+
+  .card, .card1 {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .card-form {
+    width: 80%;
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+
+  .footer {
+    margin-top: 30px;
+  }
+  
+  .card-pengaduan {
+    float: none;
+    margin-top: 20px;
+  }
+}
