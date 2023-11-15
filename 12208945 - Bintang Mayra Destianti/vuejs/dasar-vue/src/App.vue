@@ -62,6 +62,8 @@ export default{
      number: 1,
      kelas: '<h1>kelas 11 </h1>',
      nonaktif: false,
+    //  property [1] ,ini arraytr
+    // property.id ini objek
      property:{
       id:1,
       class: 'color'
