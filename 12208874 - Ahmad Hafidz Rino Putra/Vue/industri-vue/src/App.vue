@@ -7,7 +7,8 @@
   <p>-------------Data Binding---------------</p>
   <button @click="mengurangi">-</button>
   <span>{{ count }}</span>
-  <button @click="menambah">+</button>
+  <button @click="menambah">+</button>+
+  
   <br><br>
   <button :disabled="tombol">kirim</button>
   <h1 v-bind="property">z</h1>

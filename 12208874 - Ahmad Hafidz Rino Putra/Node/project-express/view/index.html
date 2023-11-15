@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    #addBook {
+      max-width: 400px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #e0f7fa; /* Light Blue */
+      border: 1px solid #03a9f4; /* Light Blue */
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+  
+    h5 {
+      text-align: center;
+      color: #03a9f4; /* Light Blue */
+    }
+  
+    input {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      box-sizing: border-box;
+      border: 1px solid #03a9f4; /* Light Blue */
+      border-radius: 4px;
+    }
+  
+    input[type="submit"] {
+      background-color: #03a9f4; /* Light Blue */
+      color: #fff;
+      cursor: pointer;
+    }
+  
+    input[type="submit"]:hover {
+      background-color: #0288d1; /* Darker Blue */
+    }
+  </style>
+  
+  
+
+  <body>
+    <div id="getBooks"></div>
+
+    <form id="addBook">
+      <h5>Add Book</h5>
+      <input
+        type="text"
+        name="name"
+        id="name"
+        placeholder="Input the book name"
+        required
+      />
+      <input
+        type="text"
+        name="author"
+        id="author"
+        placeholder="Input the book author"
+        required
+      />
+      <input
+        type="text"
+        name="year"
+        id="year"
+        placeholder="Input the book year"
+        required
+      />
+      <input
+        type="number"
+        name="page_count"
+        id="page_count"
+        placeholder="Input the book page - count"
+        required
+      />
+      <input
+        type="text"
+        name="publisher"
+        id="publisher"
+        placeholder="Input the book publisher"
+        required
+      />
+      <input type="submit" value="kirim" />
+    </form>
+
+    <script>
+      const url = "http://127.0.0.1:1316";
+    </script>
+    <script src="./javascript/getBooks.js"></script>
+    <script src="./javascript/addBooks.js"></script>
+  </body>
+</html>
