@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+
+    <script>
+        let number = 10
+        var text1 = 'Ini adalah teks pertama menggunakan single quotes ' + number
+        let text2 = "Ini adalah teks kedua menggunakan double quotes"
+        // backticks dapat meyimpan variable di dalamnya dan akan di tampilkan di layar
+        const text3 = `Ini adalah value dari number  = ${number}`
+
+        let boolean = true
+
+        console.log(number)
+        console.log(text1)
+        console.log(text2)
+        console.log(text3)
+        console.log(boolean)
+
+        let tidakAdaNilai = null
+        console.log (tidakAdaNilai)
+
+        let nilaiBelumDiisi 
+        console.log (nilaiBelumDiisi)
+
+        let simbol = Symbol('deskripsi-simbol')
+        console.log(simbol)
+
+        let array = ['apel', 'semangka', 'pisang']
+        console.log(array[1])
+
+        function tambah(a,b) {
+            console.log(a+b)
+        }
+
+        let siswa = {
+            nama: 'khairul',
+            umur: 17,
+            status: 'pelajar'
+        }
+        console.log(siswa.nama)
+
+        let number1 = 10
+        let number2 = 4
+        console.log (number1 + number2)
+        console.log (number1 - number2)
+        console.log (number1 * number2)
+        console.log (number1 / number2)
+        console.log (number1 % number2)
+
+        console.log (number1 == number2)
+        console.log (number1 != number2)
+        console.log (number1 > number2)
+        console.log (number1 < number2)
+        console.log (number1 >= number2)
+        console.log (number1 <= number2)
+
+        console.log(number1 != number2 && number1 > number2)
+        console.log(number1 == number2 || number1 != number2)
+
+        number1 = number1 + number2
+        console.log(number1)
+        number1 += number2
+        console.log(number1)
+
+        let object = {}
+        let cekObject = object.nama
+        console.log(cekObject)
+
+        let umur = 18
+        let status = (umur >= 18) ? "dewasa" : "anak-anak"
+        console.log(status)
+
+        if(umur >= 18) {
+            console.log('dewasa') 
+        } else if (umur >= 12){
+            console.log('remaja')
+        } else {
+            console.log('anak-anak')
+        }
+
+        switch(siswa.status) {
+            case "khairul":
+                console.log("nama")
+                break;
+            case"SMK WIKRAMA BOGOR":
+                console.log("Sekolah")
+                break;
+            default:
+                console.log("umur")
+        }
+    </script>
+</body>
+
+</html>
