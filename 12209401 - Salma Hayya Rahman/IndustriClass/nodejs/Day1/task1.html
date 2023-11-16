@@ -1,0 +1,27 @@
+<html>
+    <script>
+        
+const books =[ {
+    title: "Harry potter",
+    muthor: "j.k rowling",
+    genre: "fantasy",
+    year: 1997
+},
+{
+    title: "to kill a mockingbird",
+    muthor: "harper lee",
+    genre: "fiction",
+    year: 1960
+},
+{
+    title: "the great gatsby",
+    muthor: "f. scott fitzgerald",
+    genre: "fiction",
+    year: 1925
+}
+];
+    let genrefiction = books.filter((books) => books.genre === "fiction")
+    genrefiction.forEach((genrefiction) => console.log(genrefiction.title));
+    
+</script>
+</html>
