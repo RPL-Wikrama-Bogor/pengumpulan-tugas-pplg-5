@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 1</title>
+  </head>
+  <body>
+    <script>
+      let number = 10;
+
+      var text1 = "Ini text 1 menggunakan single quotes";
+      let text2 = "Ini text  2 menggunakan double quotes";
+      const text3 = `ini adalah value dari number = ${number}`;
+
+      let boolean = true;
+
+      console.log(number);
+      console.log(text1);
+      console.log(text2);
+      console.log(text3);
+      console.log(boolean);
+      //nul = kosong
+      let tidakAdaNilai = null;
+      console.log(tidakAdaNilai);
+
+      let nilaiBelumDiIsi;
+      console.log(nilaiBelumDiIsi);
+      //simbol
+      let simbol = Symbol("deskripsi-simbol");
+      console.log(simbol);
+      //Array
+      let array = ["Apple", "Pisang", "Manggah"];
+      //Fungsi
+      function tambah(a, b) {
+        consle.log(a + b);
+      }
+
+      let siswa = {
+        nama: "nama",
+        usia: 16,
+        asal: "Bogor",
+      };
+      console.log(siswa);
+
+      //Operator Aritmatika
+      let number1 = 10;
+      let number2 = 4;
+
+      console.log(number1 + number2);
+      console.log(number1 - number2);
+      console.log(number1 * number2);
+      console.log(number1 / number2);
+      console.log(number1 % number2);
+
+      //Operator Perbandingan
+      console.log(number1 == number2);
+      console.log(number1 != number2);
+      console.log(number1 > number2);
+      console.log(number1 < number2);
+      console.log(number1 >= number2);
+      console.log(number1 <= number2);
+
+      //Operator logika
+      console.log(number1 != number2 && number1 > number2);
+      console.log(number1 == number2 || number1 != number2);
+
+      //Operator Penugasan
+      number1 = number1 + number2;
+      console.log(number1);
+      number1 += number2;
+      console.log(number2);
+
+      //Operator Null Checking
+      let object = null;
+      let cekObject = object?.nama;
+      console.log(cekObject);
+
+      //Operator Kondisional
+      let cekUmur = siswa.usia >= 18 ? "Dewasa" : "Anak-Anak"; //mengambil dari let siswa yang di atas
+      console.log(cekUmur);
+
+      //If kondisional
+      if (siswa.usia >= 18) {
+        console.log("Dewasa");
+      } else if (siswa.usia >= 12) {
+        console.log("Remaja");
+      } else {
+        console.log("Anak-anak");
+      }
+
+      //switch statement
+      switch (siswa.asal) {
+        case "Bogor":
+          console.log("Perusahaan");
+          break;
+        case "Smk Wikrama":
+          console.log("Sekolah");
+          break;
+        default:
+          console.log("Umum");
+      }
+    </script>
+  </body>
+</html>

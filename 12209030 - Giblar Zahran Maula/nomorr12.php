@@ -58,13 +58,13 @@
             <h1>Menambah 1 Detik ke Waktu</h1>
             <form method="post" action="">
                
-                <input type="text" id="jam" name="jam" required>
+                <input type="text" id="jam" name="jam" required maxlength="2">
 
                 <label for="menit">:</label>
-                <input type="text" id="menit" name="menit" required>
+                <input type="text" id="menit" name="menit" required maxlength="2">
 
                 <label for="detik">:</label>
-                <input type="text" id="detik" name="detik" required>
+                <input type="text" id="detik" name="detik" required maxlength="2">
 
                 <br><button type="submit" value="Tambah 1 Detik">+1</button>
             </form>

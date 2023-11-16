@@ -1,0 +1,63 @@
+<script>
+    // buatlah sebuah fungsi javascript yang menggunakan filter untuk mengembalikan/ menampilkan daftr buku dengan genre "fiction"
+
+    const books = [
+        {
+            title: "Harry Potter and the sorcerer's Stones",
+            author: "J.K. Rowling",
+            genre: "Fantasy",
+            year: 1997
+        },
+        {
+            title: "To Kill a Mockingbird",
+            author: "Harper Lee",
+            genre: "Fiction",
+            year: 1960
+        },
+        {
+            title: "The Great Gatsby",
+            author: "F. Scott Fitzgerald",
+            genre: "Fiction",
+            year: 1925
+        }
+    ];
+
+    // const fictionBooks  = books.filter((books)=> books.genre == "Fiction").map((book) => book.title)
+    // console.log(fictionBooks)
+
+    const fictionBooks = books.filter((books) => books.genre == "Fiction")
+    fictionBooks.forEach((fictionBooks) => console.log(fictionBooks.title))
+
+    // buatlah sebuah fungsi js yang kenggunakan map untuk mengembalikan daftar barang bengan harga diskon 10%
+
+    const products = [
+        {
+            name: "Laptop",
+            price: 1000,
+        },
+        {
+            name: "Smartphone",
+            price: 500,
+        },
+        {
+            name: "Tablet",
+            price: 300,
+        }
+    ];
+    let productdics = products.map((product) => {
+    console.log(product.name + " seharga " + product.price);
+    return {
+        name: product.name,
+        price: product.price - (product.price * 0.1)
+    };
+    });
+
+    // let hargaDiskon = products.map((products) => products.price *= 0.9)
+    // let x=0
+    // products.forEach((products)=> console.log (`${products.name} seharga $${hargaDiskon[x++]}` ));
+
+    let hargaDiskon = products.map((products) => products.price *= 0.9)
+    let x=0
+    hargaDiskon = products.filter((products)=> products.price = hargaDiskon[x++]);
+    hargaDiskon.forEach((hargaDiskon) => console.log(`${hargaDiskon.name} seharga $${hargaDiskon.price}`))
+</script>

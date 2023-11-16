@@ -1,0 +1,236 @@
+<style>
+  body {
+    padding: 0;
+    margin: 0;
+  }
+
+  a {
+    margin-right: 30px;
+    margin-top: 20px;
+  }
+  nav {
+    background-color: whitesmoke;
+    box-shadow: 0px 0px 10px black;
+    height: 80px;
+  }
+
+  .teks {
+    float: right;
+    text-decoration: none;
+    background-color: orange;
+    border-radius: 20px;
+    padding: 10px 12px;
+    color: black;
+  }
+
+  .teks-isi {
+    width: 40%;
+    float: left;
+    padding-right: 15px;
+  }
+
+  .gambar {
+    width: 50%;
+    float: right;
+    margin-top: 20px;
+  }
+
+  .card {
+    clear: both;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .box {
+    width: 280px;
+    height: 73px;
+    margin-top: 25px;
+    text-align: center;
+    background-color: rgba(255, 153, 0, 0.671);
+    padding: 5px 37px 2px;
+  }
+
+  .box p {
+    font-size: 20px;
+    margin-top: -18px;
+    font-weight: bold;
+    margin-top: 15px;
+  }
+
+  .form-container {
+    width: 50%;
+    background-color: #e4e4e4;
+    padding: 20px;
+    margin: 3px;
+    margin-top: 30px;
+    border-radius: 10px;
+  }
+
+  label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+
+  input[type="submit"] {
+    background-color: #ffb84c;
+    color: #fff;
+    padding: 10px 20px;
+    margin-left: 310px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 20%;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #555;
+  }
+
+  .content {
+    width: 45%;
+    margin-left: 830px;
+    border: 2px solid #333;
+    border-width: 2px 2px;
+    height: 210px;
+    display: flex;
+    padding: 0px 2px 5px;
+    margin-top: 3px;
+  }
+
+  .content img {
+    max-width: 200px;
+    height: 150px;
+    margin-top: 45px;
+    position: relative;
+    padding: 10px;
+  }
+
+  .content p {
+    text-align: left;
+    margin-left: -572px;
+    margin-top: 100px;
+  }
+
+  .content h5 {
+    white-space: nowrap;
+    margin-left: 400px;
+    font-size: 15px;
+    text-align: left;
+    padding-right: 20px;
+  }
+
+  .text1 {
+    font-size: 15px;
+    margin-top: -480px;
+    margin-left: 830px;
+  }
+
+  @media screen and (max-width: 768px) {
+    
+    .gambar {
+      width: 100%; /* Make the image take up the full width */
+      float: none; /* Remove float */
+      margin-top: 20px; /* Add some space between the image and text */
+    }
+
+    .text1 {
+      font-size: 15px;
+      margin-top: 10px; /* Adjust the margin-top for spacing */
+      margin-left: 0; /* Remove left margin */
+    }
+  }
+</style>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <nav>
+      <a href="" class="teks">Administrator</a>
+    </nav>
+    <ol class="teks-isi">
+      <h2>Selamat datang</h2>
+      <li>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias vero sed
+        mollitia fugiat!
+      </li>
+      <li>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam debitis
+        accusamus vel veniam ab?
+      </li>
+      <li>Unde maiores autem optio tempore?</li>
+      <li>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit.</li>
+      <li>Officiis adipisci facilis pariatur perferendis!</li>
+    </ol>
+    <div>
+      <img class="gambar" src="background2.jpg" alt="" />
+    </div>
+    <br />
+    <div class="card">
+      <div class="box">
+        <p>Jumlah Kecamatan<br /><span>15</span></p>
+      </div>
+      <div class="box">
+        <p>Jumlah Desa<br /><span>42</span></p>
+      </div>
+      <div class="box">
+        <p>Jumlah Penduduk<br /><span>12.000</span></p>
+      </div>
+      <div class="box">
+        <p>Data Pertahun<br /><span>2023</span></p>
+      </div>
+    </div>
+    <div class="form-container">
+      <h2 style="text-align: center">Buat Pengaduan</h2>
+      <form action="submit.php" method="post">
+        <label for="name">NIK :</label>
+        <input type="text" id="nik" name="nik" required />
+
+        <label for="email">Nama Lengkap :</label>
+        <input type="text" id="nama" name="nama" required />
+
+        <label for="email">No Telp :</label>
+        <input type="text" id="telpon" name="telpon" required />
+
+        <label for="message">Pengaduan :</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <label for="email">Upload gambar terkait :</label>
+        <input type="file" id="telpon" name="telpon" required />
+
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+    <h2 class="text1">Laporan Pengaduan</h2>
+    <div class="content">
+      <h5>31 Agustus 2023 : Muklis</h5>
+      <p>Penuh nya lalu lintas di Gang Wikrama yang menyebabkan kemacetan</p>
+      <img src="background2.jpg" alt="Contoh Gambar" />
+    </div>
+    <div class="content">
+      <h5>31 Agustus 2023 : Muklis2</h5>
+      <p>Penuh nya lalu lintas di Gang Wikrama yang menyebabkan kemacetan</p>
+      <img src="background2.jpg" alt="Contoh Gambar" />
+    </div>
+
+    <footer style="text-align: center; background-color: #ffb84c; height: 50px;">
+        <p style="position: relative; top: 10px;">&copy Copyright</p>
+    </footer>
+  </body>
+</html>
