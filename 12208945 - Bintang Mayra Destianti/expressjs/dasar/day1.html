@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+
+<body>
+
+
+    <script>
+        let number = 10
+
+        var text1 = 'AYRA CANTIK'//bisa memanggil petik 2
+        let text2 = "Bintang mayra orang sukses" //bisa memanggil petik 1
+        const text3 = `ini adalah value dari number = ${number}`//bisa manggol variabel
+
+        let boolean = true
+
+        console.log(number)
+        console.log(text1)
+        console.log(text2)
+        console.log(text3)
+        console.log(boolean)
+
+        let tidakAdaNilai = null
+        console.log(tidakAdaNilai)
+
+        let nilaiBelumDiisi
+        console.log(nilaiBelumDiisi)
+
+        let simbol = Symbol('deskripsi-simbol')
+        console.log(simbol)
+
+        let array = ['appel', 'semangka', 'jeruk']
+        console.log(array[0])
+
+        function tambah(a, b) {
+            console.log(a + b)
+
+        }
+        let siswa = {
+            nama: "ayra",
+            usia: 17,
+            asal: "bogor"
+        }
+        console.log(siswa)
+
+        let number1 = 10
+        let number2 = 4
+
+        console.log(number1 + number2)
+        console.log(number1 - number2)
+        console.log(number1 * number2)
+        console.log(number1 / number2)
+        console.log(number1 % number2)
+
+        console.log(number1 == number2)
+        console.log(number1 != number2)
+        console.log(number1 > number2)
+        console.log(number1 < number2)
+        console.log(number1 >= number2)
+        console.log(number1 <= number2)
+
+        console.log(number1 != number2 && number1 > number2)
+        console.log(number1 == number2 || number1 != number2)
+
+         number1 = number1 + number2
+         console.log(number1)
+         number1 += number2
+         console.log(number1)
+
+
+
+         let object =null
+         
+         let cekObject = object?.nama
+         console.log(cekObject)
+
+
+         let cekUmur = (siswa.usia >= 18) ? "Dewasa" : "Anak-anak"
+         console.log(cekUmur)
+
+         if(siswa.usia >= 18){
+            console.log("Dewasa")
+
+         }else if(siswa.usia >= 12) {
+            console.log("Remaja")
+
+         }else{
+            console.log("Anak-anak")
+
+         }
+
+         switch (siswa.asal){
+            case "bogor" :
+            console.log("rumah")
+            break;
+            case "Smk wikrama":
+            console.log("Sekolah")
+            break;
+            default:
+            console.log("Umum")
+
+
+         }
+
+
+    </script>
+</body>
+
+</html>
