@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //deklarasi object
+        let person = {
+            name: "salam",
+            age: 17,
+            isMaried: false
+        }
+
+        //akses properti
+        console.log(person.name)
+        console.log(person['age'])
+
+        //menghapus properti object
+        console.log('sebelum menghapus: ')
+        console.log(person)
+        delete person.isMaried
+        console.log('setelah menghapus: ')
+        console.log(person)
+
+        //property shorthand
+        const jenis = 'persegi'
+        const panjang = 50
+        const lebar = 50
+
+        const bangunDatar = {jenis, panjang, lebar}
+        console.log(bangunDatar)
+
+        //property existence, memeriksa property dalam object
+        let student = {
+            name: 'salam',
+            age: 17,
+            classname: 'RPL'
+        }
+        console.log("name" in student)
+        console.log("genre" in student)
+        console.log(student.hasOwnProperty("name"))
+        console.log(student.hasOwnProperty("genre"))
+        
+    </script>
+</body>
+</html>
