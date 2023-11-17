@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let varNama = "khairul"
+        function printText(nama){
+            console.log('haii nama saya adalah ' + nama)
+        }
+        printText(varNama)
+
+        let printHello = function printText(nama = "kholqi") {
+            console.log('haii nama saya ' + nama)
+        }
+        printHello()
+
+        let harga = 1000
+        let margin
+        let hargaJual1 = harga + (margin || 500)
+        let hargaJual2 = harga + (margin ?? 500)
+        console.log(hargaJual1)
+        console.log(hargaJual2)
+
+        let angka = [1, 2, 3, 4, 5]
+        let angkaBaru = angka.map((angka) => angka * 2)
+        console.log(angkaBaru)
+
+        let angkaGanjil = angka.filter((angka) => angka % 2 === 1)
+        console.log(angkaGanjil)
+
+        let number1 = 1
+        let text1 = "1"
+        console.log(number1 == text1)
+        console.log(number1 === text1)
+
+        let sumAngka = angka.reduce((accmulator, curentValue) => accmulator + curentValue, 0)
+        console.log(sumAngka)
+
+        let buah = ['apel', 'semangka', 'pisang']
+        buah.forEach((buah) => console.log(buah))
+
+        let huruf = ['z', 'k', 'v', 'a']
+        huruf.sort()
+        console.log(huruf)
+
+        let hasil = huruf.find((hasil) => hasil === 'z')
+        console.log(hasil)
+        
+        const _fruits = new Array('apel', 'semangka', 'pisang')
+        console.log(_fruits)
+
+        _fruits.push("jeruk") //menambahkan "jeruk di akhir array"
+        console.log(_fruits)
+
+        _fruits.pop() //menghapus elemen terakhir pada array
+        console.log(_fruits)
+
+        _fruits.shift() //menghapus elemen pertama pada array
+        console.log(_fruits)
+
+        _fruits.splice(1,0, "melon") //menambahkan element di tengah array
+        console.log(_fruits)
+
+        // menghitung jumlah panjang array
+        console.log(_fruits.length)
+
+        // mengambil nilai index elemet
+        console.log(_fruits.indexOf('semangka'))
+        console.log(_fruits.indexOf('pisang'))
+        console.log('-------------------------')
+
+        const _numbers = Array(0, 1, 2, 3, 4)
+        // membuat salinan potongan array
+        const _newNumbers = _numbers.slice(2,4)
+        console.log(_newNumbers)
+
+        // menggabungkan 2 array 
+        const _fruits2 = ['lengkeng', 'melon']
+        const _mergedFruits = _fruits.concat(_fruits2)
+        console.log(_mergedFruits)
+
+        // deklarasi object 
+        let _person = {
+            name: "khairul kholqi",
+            age: 17,
+            isMaried: true
+        }
+
+        // akses properti
+        console.log(_person.name)
+        console.log(_person['age'])
+
+        // menghapus properti object
+        console.log('sebelum menghapus: ')
+        console.log(_person)
+        delete _person.isMaried
+        console.log('setelah menhapus: ')
+        console.log(_person)
+
+        // properti shorthand
+        const _jenis = "persegi"
+        const _panjang = 30
+        const _lebar = 30
+
+        const _bangunDatar = {_jenis, _panjang, _lebar}
+        console.log(_bangunDatar)
+
+
+    </script>
+</body>
+</html>

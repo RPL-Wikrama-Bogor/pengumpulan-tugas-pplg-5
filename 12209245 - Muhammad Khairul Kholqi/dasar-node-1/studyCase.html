@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        const books = [{
+                title: "Harry Potter and the Sorcerer's tone",
+                author: "J.K. Rowling",
+                genre: "Fantasy",
+                year: 1997
+            },
+            {
+                title: "To kill a Mokingbird",
+                author: "Harper lee",
+                genre: "Fiction",
+                year: 1960
+            },
+            {
+                title: "The Great Gatsby",
+                author: "F. Scott Fitzgerald",
+                genre: "Fiction",
+                year: 1925
+            }
+        ];
+        let fictionBooks = books.filter((books) => books.genre === 'Fiction')
+        fictionBooks.forEach((fictionBooks) => console.log(fictionBooks.title))
+
+
+        const product = [{
+                name: "Laptop",
+                price: 1000,
+            },
+            {
+                name: "Smartphone",
+                price: 500,
+            },
+            {
+                name: "Tablet",
+                price: 300,
+            },
+        ];
+        let jumlahDiskon = product.map((product) => product.price - product.price * 0.1)
+        console.log(jumlahDiskon)
+        let x = 0
+        product.forEach((product) => console.log(`${product.name}seharga $${jumlahDiskon[x++]}`));
+
+        const newProduct = [{
+                name: "Kulkas",
+                price: "200"
+            },
+            {
+                name: "TV",
+                price: "300"
+            },
+        ];
+    </script>
+</body>
+
+</html>
