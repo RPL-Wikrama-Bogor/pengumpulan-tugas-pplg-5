@@ -1,0 +1,29 @@
+<template>
+    <div>
+   
+    <Blog :data="DataBlog"></Blog>
+    </div>
+  </template>
+  
+  <script>
+  
+  import Blog from '@/components/Beranda/Blog.vue';
+  
+  import {Get} from '@/api/index.js';
+  export default{
+    components: {
+        Blog, 
+    },
+    data(){
+        return{
+            DataBlog:[],
+        }
+    },
+    async created() {
+       
+        // api untuk Blog
+        const responseBlog = await Get('http://localhost:9000/api/blog');
+        this.DataBlog = responseBlog.data.data;        
+    },
+  }
+  </script>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bla bla bla v1.3</title>
+</head>
+<body>
+    <script>
+        const _fruits = new Array('apel', 'pisang', 'semangka')
+        console.log(_fruits)
+
+        _fruits.push("mangga") //menambahkan di akhir
+        console.log(_fruits)
+
+        _fruits.pop() //menghapus elemen terakhir
+        console.log(_fruits)
+
+        _fruits.shift() //menghapus elemen awal
+        console.log(_fruits)
+
+        _fruits.splice(1,0, "melon") // menambahkan/mengubah/menghapus
+        console.log(_fruits)        
+
+        console.log(_fruits.length) //panjang isi array
+
+        console.log(_fruits.indexOf('pisang')) //mengembalikan  nilai index element atau menunjukan posisi elemen di dalam index
+        console.log(_fruits.indexOf('semangka'))
+
+        const _numbers = new Array(0, 1, 2, 3, 4) 
+        const _newNumbers = _numbers.slice(2,4) //membuat salinan potongan array
+        console.log(_newNumbers)
+
+        const _fruits2 = ["lengkeng", "alpukat"]
+        const _mergeFruits = _fruits.concat(_fruits2) //menggabungkan 2 array
+        console.log(_mergeFruits)
+
+        let _person = {
+            name: "Ardila Rosliani",
+            age: 12,
+            isMaried: false
+        }
+
+        console.log(_person.name) //akses properti
+        console.log(_person['age'])
+
+        console.log("Sebelum Menghapus: ")
+        console.log(_person)
+        delete _person.isMaried // menghapus properti object
+        console.log('Setelah Menghapus: ')
+        console.log(_person)
+
+        const _jenis='persegi'
+        const _panjang = 30
+        const _lebar = 30
+        const _bangunDatar = {_jenis, _panjang, _lebar}
+        console.log(_bangunDatar)
+
+        let _student = {
+            name: "Ardila Rosliani",
+            age : 30,
+            className: "RPL"
+        }
+        console.log("name" in _student)
+        console.log("genre" in _student)
+        console.log(_student.hasOwnProperty("name"))
+        console.log(_student.hasOwnProperty("genre"))
+
+
+
+    </script>
+</body>
+</html>

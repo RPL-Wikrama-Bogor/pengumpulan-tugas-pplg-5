@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+
+  <h2>Javascript</h2>
+
+  <body>
+    <script>
+      let number = 8;
+      console.log(number);
+
+      var text1 = 'text 1 menggunakan single quotes ' + number;
+      console.log(text1);
+
+      let text2 = "text 2 menggunakan double quotes";
+      console.log(text2);
+
+      const text3 = `text 3 menggunakan BackTicks`;
+      console.log(text3);
+
+      let boolean = true;
+      console.log(boolean);
+
+      let kosong = null;
+      console.log(kosong);
+
+      let nilaiTidakDiisi;
+      console.log(nilaiTidakDiisi);
+
+      // simbol
+      let simbol = Symbol("&#8721");
+      console.log(simbol);
+
+      //  array
+      let array = ["sufyan", "basuki", "kevin"];
+      console.log(array[1]);
+
+      function tambah(a, b) {
+        console.log(a + b);
+      }
+
+      let siswaWikrama = {
+        nama: "Sufyan",
+        usia: 15,
+        asal: "Wikrama",
+      };
+
+      console.log(siswaWikrama);
+
+      // operator
+      // operator aritamatika
+      let number1 = 10;
+      let number2 = 4;
+      console.log(number1 + number2);
+      console.log(number1 - number2);
+      console.log(number1 * number2);
+      console.log(number1 / number2);
+      console.log(number1 % number2); // modulus (sisa)
+
+      // operator perbandingan
+      console.log(number1 == number2);
+      console.log(number1 != number2);
+      console.log(number1 > number2);
+      console.log(number1 < number2);
+      console.log(number1 >= number2);
+      console.log(number1 <= number2);
+
+      // operator logika
+      console.log(number1 == number2); // false
+      console.log(number1 != number2 && number1 > number2); // true
+      console.log(number1 == number2 || number1 > number); // true
+
+      number3 = number1 + number2;
+      console.log(number3); // 14
+
+      //operator null checking (save navigation operator)
+      let object = {};
+      let cekObject = object?.nama;
+      console.log(cekObject);
+
+      // operator kondisional (persyaratan) 
+      let cekUmur = siswaWikrama.usia >= 17 ? "Dewasa" : "Anak-anak";
+      console.log(cekUmur);
+
+      // if statement
+      if (siswaWikrama.usia >= 17) {
+        console.log("Dewasa");
+      } else if (siswaWikrama.usia >= 10) {
+        console.log("Remaja");
+      } else {
+        console.log("Anak-anak");
+      }
+
+      // switch statement
+      switch (siswaWikrama.asal) {
+        case "Wikrama":
+          console.log("SMK");
+          break;
+        case "CyberLabs":
+          console.log("Perusahaan");
+          break;
+        default:
+          console.log("Home");
+      }
+    </script>
+  </body>
+</html>
