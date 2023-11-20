@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let varNama = "Okta";
+      function printText(nama) {
+        console.log("Hello, Nama Saya " + nama);
+      }
+      printText(varNama);
+
+      let printText2 = (nama) => {
+        console.log("Hello, Wolrd nama saya " + nama);
+      };
+      printText2(varNama);
+
+      let printHello = function printText(nama = "Pengunjung") {
+        console.log("Hello, World! saya " + nama);
+      };
+      printHello();
+
+      let harga = 1000;
+      let margin;
+      let hargaJual1 = harga + (margin || 500);
+      let hargaJual2 = harga + (margin ?? 500);
+
+      console.log(hargaJual1);
+      console.log(hargaJual2);
+
+      let angka = [1, 2, 3, 4, 5]
+      let angkaBaru = angka.map((angka) => angka * 2)
+      console.log (angkaBaru)
+
+      let angkaGanjil = angka.filter((angka) => angka % 2 === 1)
+      console.log (angkaGanjil)
+
+      let number1 = 1
+      let text1 = "1"
+
+      console.log(number1 == text1)
+      console.log(number1 === text1)
+
+      let sumAngka = angka.reduce((accumulator, currentValue) => accumulator + currentValue, 0)
+      console.log(sumAngka)
+
+      let buah =['apple', 'banana', 'watermelon']
+      buah.forEach((buah) => console.log(buah))
+
+      let huruf = ['d', 'i', 'a', 'r']
+      huruf.sort()
+      console.log(huruf)
+
+      let hasil = huruf.find((hasil) => hasil === 'r')
+      console.log(hasil)
+
+      const _fruits = new Array('apel', 'semangka', 'pisang')
+      console.log(_fruits);
+
+      _fruits.push('jeruk')
+      console.log(_fruits);
+
+      _fruits.pop()
+      console.log(_fruits);
+
+      _fruits.shift()
+      console.log(_fruits);
+
+      _fruits.splice(1, 0, "melon")
+      console.log(_fruits);
+
+      console.log(_fruits.length);
+
+      console.log(_fruits.indexOf('pisang'));
+      console.log(_fruits.indexOf('semangka'));
+
+      const _numbers = new Array(0, 1, 2, 3, 4)
+      const  _newNumber = _numbers.splice(2, 4)
+      console.log(_newNumber);
+
+      const _fruits1 = ['anggur', 'rambutan']
+      const _fruits2 = _fruits.concat(_fruits1)
+      console.log(_fruits2);
+    </script>
+  </body>
+</html>
