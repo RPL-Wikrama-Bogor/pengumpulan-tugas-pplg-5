@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    
+
+    <script>
+
+        //int
+        let angka = 10
+
+        //string
+        var text = 'ini adalah text mengunakan single qoutes'
+        let text1 = "ini text kedua mengunakan doubel qoutes"
+        const text3 = `ini adalah ke tiga mengunakan backticks dan angkanya = ${angka}`//bisa menambahkan fungsi di dalam nya
+
+        //boolean
+        let boolean = true
+
+        console.log(angka)
+        console.log(text)
+        console.log(text1)
+        console.log(text3)
+        console.log(boolean)
+
+        //null
+        let tidakAdaNilai = null
+        console.log(tidakAdaNilai)
+        
+        //undifine
+        let nilaiBelumDiisi
+        console.log(nilaiBelumDiisi)
+
+        //simbol
+        let simbol = Symbol('deskripsi-simbol')
+        console.log(simbol)
+
+        //array
+        let array = ['apel','durian','mangga']
+        console.log(array[0])
+
+        //function
+        function tambah(a,b) {
+            console.log(a+b)
+        }
+        
+        //objek
+        let siswa = {
+            nama: 'sutarto',
+            umur: 14,
+            asal: 'benda'
+        }
+        console.log(siswa.nama)
+
+
+        //operator aritmatika
+        let bilangan1 = 10
+        let bilangan2 = 4
+        console.log(bilangan1 + bilangan2)
+        console.log(bilangan1 - bilangan2)
+        console.log(bilangan1 * bilangan2)
+        console.log(bilangan1 / bilangan2)
+        console.log(bilangan1 % bilangan2)
+
+        //operator perbandingan
+        console.log(bilangan1 == bilangan2)
+        console.log(bilangan1 != bilangan2)
+        console.log(bilangan1 <= bilangan2)
+        console.log(bilangan1 >= bilangan2)
+        console.log(bilangan1 < bilangan2)
+        console.log(bilangan1 > bilangan2)
+
+        //opreator logika
+        console.log(bilangan1 != bilangan2 && bilangan1 > bilangan2)
+        console.log(bilangan1 == bilangan2 || bilangan1 != bilangan2)
+
+        //operator penugasaan
+        bilangan3 = bilangan1 + bilangan2
+        bilangan1 += bilangan2
+        console.log(bilangan1)
+        bilangan1 -= bilangan2
+        console.log(bilangan1)
+        bilangan1 *= bilangan2
+        console.log(bilangan1)
+        bilangan1 /= bilangan2
+        bilangan1 %= bilangan2
+
+        console.log(bilangan3)
+
+
+        //opertor null chek
+        let objek = {}
+        let cekObjek = objek?.nama
+        console.log(cekObjek)       
+        
+       //operator kondisional
+       let cekUmur = (siswa.umur >= 18 ) ? "dewasa" : "anak-anak"
+       console.log(cekUmur)
+
+       //if
+       if(siswa.umur >= 18){
+        console.log("anda dewasa")
+       } else if (siswa.umur >= 12) {
+        console.log("Remaja")  
+       }else{
+        console.log("Anak-anak")
+       }
+
+       //switch
+       switch (siswa.asal) {
+        case "pilmut":
+            console.log("perumahan")
+            break;
+        case "wikrama":
+            console.log("sekolah")
+            break;
+       
+        default:
+            console.log("tidak tingal di bumi");
+            break;
+       }
+
+    </script>
+</body>
+</html>
