@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //objek
+    
+        //deklarasi object
+        let _person = {
+            nama: "sugi",
+            umur: 25,
+            isMaried: false
+        }
+
+        //akses properti
+        console.log(_person.nama);
+        console.log(_person['umur']);
+
+        //menghapus properti object
+        console.log("sebelum di hapus : ")
+        console.log(_person)
+        delete _person.isMaried
+        console.log("setelah di hapus di hapus : ")
+        console.log(_person)
+
+
+        //property shorthand
+        const _jenis = 'persegi'
+        const _panjang = 30
+        const _lebar = 30
+
+        const _bangunDatar = {_jenis, _panjang, _lebar}
+        console.log(_bangunDatar)
+
+        //property existence, memeriksa property dalam object
+        let _student = {
+            nama: "sutarto",
+            usia: 24,
+            className: "Pplg"
+        }
+
+        console.log("nama" in _student)
+        console.log("genre" in _student)
+        console.log(_student.hasOwnProperty("nama"))
+        console.log(_student.hasOwnProperty("genre")) 
+
+
+        // ARAY
+
+        const _fruits = new Array('apel','pisang','semangka')
+        console.log(_fruits)
+        //push menambahkan di akhir
+        _fruits.push("jeruk");
+        console.log(_fruits);
+        //menghapus di akhir
+        _fruits.pop();
+        console.log(_fruits);
+        //menambah di tengah
+        _fruits.splice(1, 0,"melon"); //(1 -> index, 0 -> item mana yang ingin di ganti, melom -> item )
+        console.log(_fruits);
+        //menghapus di awal
+        _fruits.shift()
+        console.log(_fruits);
+
+        //menghapus dai awal (shift) lalu tambahkan di akhir (push)
+        _fruits.shift()
+        _fruits.push('apel')
+        console.log(_fruits)
+
+        
+
+        //mengitung panjang array
+        console.log(_fruits.length)
+
+        //mengembalikan nilai ke index
+        console.log(_fruits.indexOf('pisang'))
+        console.log(_fruits.indexOf('pisang'))
+
+
+        //membuat salinan potongan array
+        const _number = new Array(0,1,2,3,4,5,6,7,8,9)
+        const _newNumber = _number.slice(2,4)
+        console.log(_newNumber)
+
+        //menggabungkan 2 array
+        const _fruits1 = ['lengkeng', 'calingcing']
+        const _mergeFruits = _fruits.concat(_fruits1)
+        console.log(_mergeFruits)
+
+
+        
+        //array
+        const fruits = ['apel','pisang','mangga']
+            const number2 = new Array(0,1,2,3,4,5)
+            const _fruits2 = new Array('angur','semangka','jerik')
+        //array map membuat array baru dari memanggil sebuah function pada setiap elemen array.
+
+        let angka = [1,2,3,4,5]
+        let angkabaru = angka.map((angka)=> angka * 2)
+        console.log(angkabaru)
+
+        //filter mencari semua elemen di dalam array yang sesuai dengan kriteria tertentu. Method ini mengembalikan array baru yang berisi elemen yang sesuai dengan kriteria yang dicari atau lulus pengujian fungsi callback.
+        const angkaGanjil = angka.filter(value=> value % 2 === 1);
+        console.log(angkaGanjil)
+
+        //perbedaan == dan ===
+        let number1 = 1
+        let text1 = "1"
+
+        console.log(number1 == text1)//mengecek nilai nyya doang
+        console.log(number1 === text1)//mengecek nilai dan data tipe nya
+
+        //reduce mereduce elemen array menjadi single value dengan menjumlah setiap elemen (dari kiri ke kanan).
+        //sum untuk menjumlahkan array 
+        const angkaReduce = [1, 2, 3, 4, 5];
+        const sum = angkaReduce.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+        console.log(sum)
+    </script>
+</body>
+</html>
