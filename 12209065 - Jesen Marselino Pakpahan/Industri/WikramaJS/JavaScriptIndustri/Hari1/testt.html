@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const nilai = 60;
+const nilaiString = 'A';
+const user = {
+    name: "Louis",
+    userType: 'Admin',
+}
+
+
+
+const array = ['Reyhan', 'Asep', 'Hendra'];
+
+const student = [
+    {
+        nama: 'Agus',
+        nilai: 90,
+        kelas: 11
+    },
+    {
+        nama: 'Asep',
+        nilai: 75,
+        kelas: 11
+    },
+    {
+        nama: 'Wangsaf',
+        nilai: 100,
+        kelas: 11
+    },
+    {
+        nama: 'Hendra',
+        nilai: 10,
+        kelas: 10
+    }
+    ];
+   
+   
+const studentsGrade = student.map(student => {
+    let grade;
+    
+    if(student.nilai >= 90){
+        grade = 'A';
+    } else if (student.nilai >= 75){
+        grade = 'B';
+    } else {
+        grade = 'F';
+    }
+    
+    return{
+      ...student, 
+      grade
+    };
+    
+});
+
+const total = student.reduce((total, student) => total + student.nilai ,0);
+    console.log(studentsGrade)
+    console.log('total', total);
+    console.log('rata-rata nilai', total / student.length);
+
+
+const students = [
+    {
+        nama: 'John',
+        umur: 20,
+        nilai: [90, 85, 88]
+    },
+    {
+        nama: 'Alice',
+        umur: 22,
+        nilai: [75, 80, 92]
+    },
+    {
+        nama: 'Bob',
+        umur: 21,
+        nilai: [88, 91, 78]
+    }
+    ];
+    
+    function hitungratarata(students){
+        return students.map(student => {
+            const rata = student.nilai.reduce((total, nilai) => total + nilai, 0) / student.nilai.length;
+            return {
+                ...student,
+                rata
+            }
+        })
+    }
+    console.log ('===============================================================================================')
+    console.log('                                         Rata Rata Nilai')
+    const RataRata = hitungratarata(students)
+    console.log(RataRata)
+
+console.log ('===============================================================================================')
+//  const cart = [
+//         {
+//         namaProduk: 'Kaos kaki',
+//         harga: 10000,
+//         checked: 'true',
+//     },
+//         {
+//         namaProduk: 'Sepatu',
+//         harga: 10000,
+//         checked: 'false',
+//     },
+//         {
+//         namaProduk: 'Sabun',
+//         harga: 300000,
+//         checked: 'true',
+//     },
+//     ];
+//     const totalHarga = cart.reduce((total, produk) => produk.checked ? total + produk.harga : total ,0);
+//     console.log('totalHarga', totalHarga);
+
+//     const nilaii = [100, 50, 78, 11, 89, 500];
+//     nilaii.sort((a ,b) => a > b ? 1 : -1)
+//     cart.sort((a,b) => a.harga < b.harga ? 1 : -1);
+    
+//     const product = cart.find(produk => produk.namaProduk == 'Kaos kaki');
+//     console.log('Produk', product)
+    
+//     const multiply = 2
+//     const multiplyByTwo = (number) => {
+//         console.log(number * multiply);
+//     }
+
+//     multiplyByTwo(50);
+
+// console.log(studentsGrade)
+    
+// const underperformingStudents = student.filter(student => student.nama == 'Wangsaf');
+// console.log(underperformingStudents);
+
+
+
+// let i = 0;
+// do{
+//     console.log(array[i]);
+//     i++;
+// } while (i < array.length)
+
+// while(i < array.length){
+//     console.log(array[i]);
+//     i++;
+// }
+
+// for (let i = 0; i < array.length; i++){
+//     console.log(array[i])
+// }
+
+// array.forEach(val => {
+//     console.log(val);
+// });
+
+// let n = 0;
+// for (let i = 0;i<10;i++){
+//     console.log(++n);
+// }
+
+// console.log('-----------------------');
+
+// n = 0
+// for (let i = 0;i<10;++i){
+//     console.log(n++);
+// }
+
+
+// switch (user.userType){
+//     case 'Admin':
+//         console.log('Anda admin');
+//         break;
+//     case 'Student':
+//         console.log('Anda murid');
+//         break;
+//     default:
+//         throw Exception('ok');
+//         break;
+// }
+
+// switch (nilaiString){
+//     case 'A':
+//         console.log('Nilai anda Sangat Baik');
+//         break;
+//     case 'B':
+//         console.log('Nilai anda Baik');
+//         break;
+//     case 'C':
+//         console.log('Nilai Anda kurang');
+//         break;
+//     default:
+//         console.log('Anda Beban');
+//     break;
+        
+
+// }
+
+
+
+
+// const nilai = 90;
+
+// if(nilai ==90){
+//     console.log('A');
+// } else if (nilai == 75){
+//     console.log('B');
+// } else{
+//     console.log('C');
+// }
+    </script>
+</body>
+</html>
