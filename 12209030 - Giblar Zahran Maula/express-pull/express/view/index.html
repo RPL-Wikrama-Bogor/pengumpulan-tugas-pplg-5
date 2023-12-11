@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>express js</title>
+</head>
+<body>
+  <div id="getBooks">
+    <center>
+
+        <table id="bookTable">
+            <tr>
+                <th>ID</th>
+                <th>Nama Buku</th>
+                <th>Publisher</th>
+                <th>Year</th>
+                <th>Page Count</th>
+            </tr>
+        </table>
+    </center> 
+  </div> 
+  <form id="addBook">
+    <h5>add book</h5>
+    
+    
+    <input type="text" name="name" placeholder="name" id="name" required autocomplete="off"><br><br>
+    <input type="text" name="author" placeholder="author" id="author" required autocomplete="off"> <br><br>
+    <input type="text" name="year" placeholder="year" id="year" required autocomplete="off">  <br><br>
+    <input type="number" name="page_count" placeholder="page count" id="page_count" required autocomplete="off"> <br><br>
+    <input type="text" name="publisher" placeholder="publisher" id="publisher" required autocomplete="off"><br><br>
+    <input type="submit" value="kirim" id="submit">
+  </form>
+
+
+  <script>
+    const url = "http://localhost:3000"
+   
+  </script>
+  <script src="./javascript/getBook.js"></script>
+  <script src="./javascript/addBook.js"></script>
+</body>
+</html>
+<style>
+    html{
+        display: inline-block;
+    }
+   table{
+    text-align: center;
+    padding: 10px;
+   }
+    th, td{
+        border: 1px solid black
+    }
+
+    #name, #author, #year, #page_count, #publisher{
+        width: 20%;
+        height: 2rem;
+        outline: none;
+        border:none;
+        background-color: #e5e5e5;
+        border-radius: 5px;
+    }
+
+    #submit{
+        width: 20%;
+        height: 3rem;
+        outline: none;
+        border: none;
+        background-color: black;
+        color: white;
+        border-radius: 3px;
+    }
+    
+    #submit:hover{
+        background-color: #484848;
+    }
+
+</style>

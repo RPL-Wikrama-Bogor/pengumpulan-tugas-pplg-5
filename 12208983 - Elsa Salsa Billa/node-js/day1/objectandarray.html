@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const _fruits = new Array('apel', 'pisang', 'semangka')
+        console.log(_fruits)
+        //menambah dan menghapus element dalam array
+        _fruits.push("jeruk") // menambah "jeruk" ke akhir array
+        console.log(_fruits)
+        _fruits.pop() //menghapus element terakhir pd array
+        console.log(_fruits)
+        _fruits.shift() //menghapus element pertama pd array
+        console.log(_fruits)
+
+        // menambah element ditengah array
+        _fruits.splice(1,0, "melon") 
+        console.log(_fruits)
+
+        //menghitung jumlah panjang array
+        console.log(_fruits.length)
+
+        // mengembalikan nilai index element
+        console.log(_fruits.indexOf('pisang'))
+        console.log(_fruits.indexOf('jeruk')) // jika tidak ditemukan akan bernilai -1
+
+        const _numbers = new Array(0,1,2,3,4)
+        //membuat salinan potongan array
+        const _newNumbers = _numbers.slice(2, 4)
+        console.log(_newNumbers)
+
+        //menggabungkan 2 array
+        const _fruits2 = ['lengkeng', 'melon']
+        const _mergedFruits = _fruits.concat(_fruits2)
+        console.log(_mergedFruits)
+
+        //Deklarasi object
+        let _person = {
+            name: "John Doe",
+            age: 30,
+            isMarried: false
+        }
+
+        //Akses properti
+        console.log(_person.name)
+        console.log(_person['age'])
+
+        //mengahpus properti objct
+        console.log('Sebelum menghapus: ')
+        console.log(_person)
+        delete _person.isMarried
+        console.log('Setelah menghapus: ')
+        console.log(_person)
+
+        //properti shorthand
+        const _jenis = 'persegi'
+        const _panjang = 30
+        const _lebar = 30
+
+        const _bangunDatar = {_jenis, _panjang, _lebar}
+        console.log(_bangunDatar)
+
+        // property existence, memeriksa properti dalam object
+        let _student = {
+            name: "Jhon Cena",
+            age: 30,
+            className: 'RPL'
+        }
+        console.log("name" in _student)
+        console.log("genre" in _student)
+        console.log(_student.hasOwnProperty("name"))
+        console.log(_student.hasOwnProperty("genre"))
+    </script>
+</body>
+</html>

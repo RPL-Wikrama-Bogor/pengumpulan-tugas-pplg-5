@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let number = 10
+
+        var text1 = 'ini adalah kalimat yg menggunakan single quotes'
+        let text2 = 'ini adalah kalimat yg menggunakan double quotes'
+        const text3 = `ini text ketiga yg menggunakan BackTicks = ${number}`
+
+
+        let bolean = true
+
+        console.log(number)
+        console.log(text1)
+        console.log(text2)
+        console.log(text3)
+        console.log(bolean)
+
+        let tidakBernilai = null
+        console.log(tidakBernilai)
+
+        let belumTerisi 
+        console.log(belumTerisi)
+
+        let simbol = Symbol('deskripsi-simbol')
+        console.log(simbol)
+
+        let array = ['appel', 'semangka', 'jeruk']
+
+        function tambah(a,b){
+            console.log(a+b)
+        }
+
+        let siswa = {
+            nama: 'awa',
+            usia: 16,
+            asal: 'KandunganIbu'
+        }
+        console.log(siswa.nama)
+
+        let number1 = 10
+        let number2 = 4
+        console.log(number1+number2)
+        console.log(number1-number2)
+        console.log(number1/number2)
+        console.log(number1*number2)
+
+        console.log(number1 == number2)
+        console.log(number1 != number2)
+        console.log(number1 > number2)
+        console.log(number1 < number2)
+        console.log(number1 >= number2)
+        console.log(number1 <= number2)
+
+        console.log(number1 != number2 && number1 > number2)
+        console.log(number1 == number2 || number1 != number2)
+        
+        number1 = number1 + number2
+        console.log(number1)
+        number1 += number2
+        console.log(number1)
+
+        let object = {}
+
+        let cekObject = object?.nama
+        console.log(cekObject)
+
+        let cekUmur = (siswa.usia >= 18) ? "Dewasa" : "Anak-anak"
+        console.log(cekUmur)       
+
+        if(siswa.usia >= 18){
+            console.log('Dewasa')
+        }else if(siswa.usia >= 12){
+            console.log("Remaja")
+        }else {
+            console.log("Anak-anak")
+        }
+
+        switch(siswa.asal){
+            case "CyberLabs" :
+                console.log("Perusahaan")
+                break;
+            case "Wikrama" :
+                console.log("Sekolah")
+                break;
+            default: 
+            console.log("Umum")
+        }
+    </script>
+</body>
+</html>

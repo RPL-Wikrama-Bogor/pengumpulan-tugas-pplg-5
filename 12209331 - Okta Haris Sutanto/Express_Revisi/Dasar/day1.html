@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        let numbers = 10
+
+        var text1 = 'ini text pertama menggunakan single quotes'
+        let text2 = "ini text kedua menggunakan double quotes"
+        const text3 = `ini text ketiga menggunakan backticks = ${numbers}`
+
+        let boolean = true
+
+        console.log(numbers)
+        console.log(text1)
+        console.log(text2)
+        console.log(text3)
+        console.log(boolean)
+
+        let tidakAdaNilai = null
+        console.log(tidakAdaNilai)
+
+        let nilaiBelumDiisi
+        console.log(nilaiBelumDiisi)
+
+        let simbol = Symbol('deskripsi-simbol')
+        console.log(simbol)
+
+        let array = ['aple', 'semangka', 'jeruk']
+        console.log(array[0])
+        
+        function tambah(a, b) {
+            console.log(a + b)
+        }
+         let siswa = {
+            nama: 'Okta',
+            usia: '16 Tahun',
+            asal: 'wakaranai'
+         }
+         console.log(siswa)
+
+         let number1 = 10
+         let number2 = 4
+
+         console.log(number1 + number2)
+         console.log(number1 - number2)
+         console.log(number1 * number2)
+         console.log(number1 / number2)
+         console.log(number1 % number2)
+
+         console.log(number1 == number2)
+         console.log(number1 != number2)
+         console.log(number1 > number2)
+         console.log(number1 >= number2)
+         console.log(number1 <= number2)
+
+        //  semua nya harus true biar outputnya true
+         console.log(number1 != number2 && number1 > number2)
+        //  kondsi salah satu nya benar hasilnya true
+         console.log(number1 == number2 || number1 != number2)
+
+         number1 = number1 + number2
+         console.log(number1)
+         number1 += number2
+         console.log(number1)
+
+         let object = null
+         let cekObject = object?.nama
+         console.log(cekObject)
+
+         let cekUmur = (siswa.usia >= 18) ? "Dewasa" : "Anak-anak"
+         console.log(cekUmur)
+
+         if(siswa.usia >= 18) {
+            console.log("dewasa")
+         }else if(siswa.usia >= 12) {
+            console.log("Remaja")
+         }else {
+            console.log("Anak-anak")
+         }
+
+         switch (siswa.asal) {
+            case "wakaranai":
+                console.log("Wibu")
+                break;
+          case "SMK Wikrama":
+                console.log("Awam")
+                break;
+         }
+    </script>
+</body>
+</html>

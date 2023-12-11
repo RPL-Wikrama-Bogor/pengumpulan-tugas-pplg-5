@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let varNama = "Hafidz"
+        function printText(nama){
+            console.log("Hello" + nama);
+        }
+        printText(varNama)
+
+        let printText2 = (nama) =>{
+            console.log("Hello World, nama saya " + nama);
+        }
+        printText2(varNama)
+
+        let printHello = function printText(nama = "Pengunjung") {
+            console.log("Nama saya " + nama);
+        }
+        printHello()
+
+        let harga = 1000
+        let margin
+        let hargaJual = harga + (margin || 500)
+        let hargaJual2 = harga + (margin ?? 500)
+
+        console.log(hargaJual);
+        console.log(hargaJual2);
+
+        let array = [1,2,3,4,5]
+        let newArray = array.map((array) => array * 2)
+        let ganjil = array.filter((array) => array % 2 == 1)
+        let numberReduce = array.reduce((accumulator, currentValue) => accumulator + currentValue,0)
+        console.log(newArray);
+        console.log(ganjil);
+        console.log(numberReduce);
+
+        let fruits = ['apple', 'grape', 'watermelon']
+        fruits.forEach((fruits) => console.log(fruits))
+            
+        let huruf = ['c','b','n','r']
+        huruf.sort()
+        console.log(huruf)
+
+        let hasil = huruf.find((hasil) => hasil === 'z')
+        console.log(hasil);
+
+        const buah = new Array('apple', 'grape', 'watermelon', 'orange')
+        console.log(buah);
+
+        buah.push("banana")
+        console.log(buah);
+
+        buah.pop()
+        console.log(buah);
+
+        buah.shift()
+        console.log(buah);
+
+        buah.splice(1,2,)
+        console.log(buah);
+
+        console.log(buah.length);
+
+        console.log(buah.indexOf('melon'));
+        console.log(buah.indexOf('apple'));
+
+        const numbers = new Array(0,1,2,3,4,5)
+        const newNumbers = numbers.slice(0,4)
+        console.log(newNumbers);
+
+        const buah2 = ['manggo', 'starfruit']
+        const gabunganBuah = buah.concat(buah2)
+        console.log(gabunganBuah);
+
+        let person = {
+            name : 'hafidz',
+            age : 16,
+            isMarried : 'Not Yet'
+        }
+
+        console.log(person);
+        console.log(person.name);
+        console.log(person['age']);
+
+        console.log('sebelum menghapus : ');
+        console.log(person);
+        delete person.isMarried
+        console.log('setelah menghapus : ');
+        console.log(person);
+
+        const jenis = 'Persegi'
+        const panjang = 30
+        const lebar = 15
+
+        const bangunDatar = {jenis, panjang, lebar}
+        console.log(bangunDatar);
+
+        let student = {
+            name : 'Jhon Cena',
+            age : 28,
+            className : 'RPL'
+        }
+
+        console.log('name' in student);
+        console.log('genre' in student);
+        console.log(student.hasOwnProperty('name'));
+        console.log(student.hasOwnProperty('genre'));
+
+    </script>
+</body>
+</html>

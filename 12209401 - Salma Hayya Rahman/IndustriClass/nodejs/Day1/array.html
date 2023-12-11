@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const _fruits = new Array('apel' , 'pisang' , 'semangka')
+        console.log(_fruits)
+
+        _fruits.push("jeruk") //menambahkan di akhir
+        console.log(_fruits)
+
+        _fruits.splice(1,0, "melon") //menambah di tengah dan juga bisa untuk menghapus
+        console.log(_fruits)
+
+        _fruits.pop() //menghapus value terakhir array
+        console.log(_fruits)
+
+        _fruits.shift() //menghapus value pertama array
+        console.log(_fruits)
+
+        console.log(_fruits.length) //menghitung jumlah value array
+
+         //mengembalikan nilai index 
+        console.log(_fruits.indexOf('pisang')) 
+        console.log(_fruits.indexOf('semangka')) //jika tidak ditemukan akan bernilai -1
+
+        const _numbers = new Array(0, 1, 2, 3, 4)
+        //membuat salinan potongan array 
+        const _newNumbers = _numbers.slice(2,4)
+        console.log(_newNumbers)
+
+
+        //menggabungkan 2 array
+        const _fruits2 = ['mangga' , 'anggur']
+        const _mergedFruits = _fruits.concat(_fruits2)
+        console.log(_mergedFruits)
+        
+    </script> 
+</body>
+</html>

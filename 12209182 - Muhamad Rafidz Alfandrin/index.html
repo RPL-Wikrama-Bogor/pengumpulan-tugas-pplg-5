@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web</title>
+    <style>
+      body {
+        background-color: #DAA520;
+        margin: 0; 
+        font-family: Arial, sans-serif; 
+      }
+      .button {
+        float: right;
+        background-color: #F1DBBF;
+        text-decoration: none;
+        padding: 8px 15px;
+        border-radius: 10px;
+        margin-bottom: 20px; 
+      }
+      .konten {
+        padding: 30px;
+        border-radius: 10px;
+        max-width: 90%;
+        margin: 0 auto; 
+        overflow: hidden;
+      }
+      .text {
+        padding-right: 10px;
+        margin-right: 10%;
+        width: 60%;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+      }
+      .baris {
+        box-sizing: border-box; 
+        padding: 20px;
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around; 
+      }
+      .jumlah1 {
+        flex: 1;
+        margin: 10px;
+        padding: 10px;
+        text-align: center;
+        border-radius: 10px;
+        background-color: #FFD700; 
+      }
+      .form-container {
+        max-width: 450px;
+        margin: 10px;
+        border: 5px solid #7E1717;
+        padding: 20px; 
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+      .form-group {
+        margin-bottom: 15px;
+      }
+      label {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+      input[type="text"],
+      input[type="password"] {
+        width: 100%;
+        padding: 5px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+      }
+      button {
+        background-color: #B8860B;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 3px;
+        cursor: pointer;
+      }
+      button:hover {
+        background-color: #D2691E;
+      }
+      @media (max-width: 768px) {
+        .text {
+          width: 100%;
+          float: none;
+          margin-right: 0;
+        }
+        .baris {
+          flex-direction: column;
+        }
+      }
+    </style>
+</head>
+<body>
+<a href="" class="button">CLICK</a>
+<section class="konten">
+    <div class="text">
+        <h1>Buku Novel</h1>
+        <ol> 
+            <li>Novel "Cara untuk Bersikap Bodo Amat"</li>
+            <li>Novel "Ayah"</li>
+            <li>Novel "Segala Galanya Ambyar"</li>
+        </ol>
+    </div>
+    <img src="Buku2.jpg" alt="Gambar Buku">
+</section>
+<section class="baris">
+    <div class="jumlah1">Mark Manson <hr> "Sebuah Seni untuk Bersikap Bodo Amat"</div>
+    <div class="jumlah1">Tere Liye <hr> "Dia Adalah Kakakku"</div>
+    <div class="jumlah1">Jerome Polin <hr> "Mantappu Jiwa"</div>
+    <div class="jumlah1">Dee Lestari <hr> "Puteri & Bintang Jatuh"</div>
+</section>
+<div class="form-container">
+    <h2>Form Pembelian Novel</h2>
+    <form>
+      <div class="form-group">
+        <label for="nama">Nama:</label>
+        <input type="text" id="nama" name="nama" placeholder="Masukkan Nama Anda">
+      </div>
+      <div class="form-group">  
+        <label for="store-buku">Store Buku:</label>
+        <input type="text" id="store-buku" name="store-buku" placeholder="Masukkan Store Buku">
+      </div>
+      <div class="form-group">
+        <label for="novel-favorit">Novel Favorit:</label>
+        <input type="text" id="novel-favorit" name="novel-favorit" placeholder="Masukkan Novel Favorit">
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
