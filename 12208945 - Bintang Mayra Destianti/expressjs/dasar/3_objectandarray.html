@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //deklarasi object
+        let _person = {
+            name: "Bintang cantik",
+            age:17,
+            isMaried : false
+        }
+
+        //akses properti
+        console.log(_person.name)
+        console.log(_person['age'])
+
+        //menghapus properti object
+        console.log('sebelum menghapus: ')
+        console.log(_person)
+        delete _person.isMaried
+
+        console.log('setelah menghapus: ')
+        console.log(_person)
+
+        //property shorthand
+        const _jenis = 'persegi'
+        const _panjang = 30
+        const _lebar = 30
+
+        const _bangunDatar = {_jenis, _panjang, _lebar}
+        console.log(_bangunDatar)
+
+        //property exixtence , memeriksa properti dalam object
+        let _student = {
+            name : "kendal jenner",
+            age : 17,
+            className: 'RPL'
+        }
+
+        console.log("name" in _student)
+        console.log("genre" in _student)
+        console.log(_student.hasOwnProperty("name"))
+        console.log(_student.hasOwnProperty("genre"))
+
+
+        
+        const _fruits = new Array('Apel','pisang','semangka')
+        console.log(_fruits)
+        // menambah dan menghapus element
+        _fruits.push("jeruk")  
+        // menambah jeruk ke akhir array
+        console.log(_fruits)
+
+        _fruits.pop()
+        console.log(_fruits)
+
+        _fruits.shift()  //menghapus element pertama pd array
+        console.log(_fruits)
+        _fruits.splice(1,0, "melon") //menambahka mengubah/menghpus array tetep
+        //menghasilkan array baru (slice m)
+        console.log(_fruits)
+
+//menghitung jumlah panjang array
+        console.log(_fruits.length)
+
+        //mengembalikan nilai index element
+        console.log(_fruits.indexOf('pisang'))
+        console.log(_fruits.indexOf('jeruk'))
+        //jika tidak ditemukan akan bernilai -1
+
+        const _numbers = new Array(0,1,2,3,4)
+        // membuat salinan potongan array
+        const _newNumbers =  _numbers.slice(2,4)
+        console.log(_newNumbers)
+
+        // menggunakan array
+        const _fruits2 = ['lengkeng','melon']
+        const _mergedfruits = _fruits.concat(_fruits2)
+        console.log(_mergedfruits)
+    </script>
+</body>
+</html>

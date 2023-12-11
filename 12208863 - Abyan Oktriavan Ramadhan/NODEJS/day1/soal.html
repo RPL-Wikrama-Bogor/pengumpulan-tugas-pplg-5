@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soal</title>
+</head>
+<body>
+    <script>
+        // soal 1
+        const books = [
+            {
+                title: "Harry Potter and the sorcerer's stone",
+                author: "J.K Rowling",
+                genre: "Fantasy",
+                year: 1997
+            },
+            {
+                title: "To Kill a Mockingbird",
+                author: "Harper Lee",
+                genre: "Fiction",
+                year: 1960
+            },
+            {
+                title: "The great gatsby",
+                author: "f, scott fitzgerald",
+                genre: "Fiction",
+                year: 1925
+            },
+        ]
+
+        filterGenre = books.filter((books) => books.genre == "Fiction")
+        console.log(filterGenre)
+        filterGenre.forEach((filterGenre) => console.log(filterGenre.title))
+
+        // 2
+
+        const product = [
+            {
+                name: "laptop",
+                price: 1000,
+            },
+            {
+                name: "smartphone",
+                price: 500,
+            },
+            {
+                name: "tablet",
+                price: 300,
+            }
+        ];
+
+        let harga = product.map((product) => product.price - product.price * 0.1)
+        console.log(harga)
+        let x = 0
+        product.forEach((product) => console.log(`${product.name} seharga $${harga[x++]} `))
+
+        // buatlah sebuah fungsi js untuk menyatukan
+        // array product dan newproduct lalu tampilkan rata rata harganya
+
+        const newproduct = [
+            {
+                name: "kulkas",
+                price: 200,
+            },
+            {
+                name: "TV",
+                price: 300
+            }
+        ];
+
+        const megaHarga = newproduct.concat(product)
+        console.log(megaHarga)
+
+        let total = product.map((product) => console.log)
+        
+    </script>
+</body>
+</html>
