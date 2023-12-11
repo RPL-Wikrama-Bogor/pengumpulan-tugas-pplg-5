@@ -1,0 +1,68 @@
+
+    /* Gaya CSS untuk menambahkan border radius pada tabel */
+    table {
+      border-collapse: separate;
+      border-spacing: 1;
+      width: 100%;
+    }
+  
+    th, td {
+      padding: 10px;
+      text-align: left;
+      border-bottom: 1px solid #ddd; /* Garis batas antar baris */
+    }
+  
+    tbody tr:last-child td {
+      border-bottom: none; /* Hapus garis batas pada baris terakhir */
+    }
+  
+    .rounded-table {
+      border-radius: 25px; /* Sesuaikan nilai border-radius sesuai keinginan Anda */
+      overflow: hidden; /* Memastikan border-radius berfungsi dengan baik */
+    }
+    /* Pagination */
+.pagination {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.pagination > ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.pagination > ul > li {
+    margin-right: 5px;
+}
+
+.pagination > ul > li > a,
+.pagination > ul > li > span {
+    display: block;
+    padding: 10px;
+    color: #fff;
+    background-color: #007bff;
+    border: 1px solid #007bff;
+    border-radius: 4px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.pagination > ul > li > a:hover,
+.pagination > ul > li.active > a,
+.pagination > ul > li.active > span {
+    background-color: #0056b3;
+    border-color: #0056b3;
+}
+
+.pagination > ul > li:first-child > a,
+.pagination > ul > li:first-child > span {
+    margin-left: 0;
+}
+
+.pagination > ul > li:last-child > a,
+.pagination > ul > li:last-child > span {
+    margin-right: 0;
+}
