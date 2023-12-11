@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body style="background-color: black">
+    <script>
+      const books = [
+        {
+          title: "harry potter",
+          author: "jk rowling",
+          genre: "fantasy",
+          year: 1992,
+        },
+        {
+          title: "mudrika",
+          author: "harpen",
+          genre: "fiction",
+          year: 1309,
+        },
+        {
+          title: "kill la mochingbird🤣🤣🤣🤣",
+          author: "f scott",
+          genre: "fiction",
+          year: 1992,
+        },
+        {
+          title: "shadow traveling",
+          author: "f scott",
+          genre: "fiction",
+          year: 1992,
+        },
+        {
+          title: "rungkadd",
+          author: "f scott",
+          genre: "fiction",
+          year: 1992,
+        },
+      ];
+
+      function filterBuku(books) {
+        return books.filter((book) => book.genre === "fiction");
+      }
+
+      const bukuFiksi = filterBuku(books);
+
+      function judulBuku() {
+        bukuFiksi.forEach((book) => {
+          console.log(book.title);
+        });
+      }
+
+      judulBuku();
+    </script>
+  </body>
+</html>
