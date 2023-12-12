@@ -9,6 +9,7 @@ $furnitures = [
     [
         "nama" => "Meja belajar classic",
         "harga" => 150000,
+    
         "tipe" => "non-rakitan"
     ],
     [
