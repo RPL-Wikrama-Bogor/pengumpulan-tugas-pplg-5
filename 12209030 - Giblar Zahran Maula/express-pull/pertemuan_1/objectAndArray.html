@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+</style>
+<body style="background-color: black;">
+    <script>
+let _person = {
+    nama: 'giblar',
+    umur: 23,
+    isMaried :false
+}
+
+//
+console.log(_person.name)
+console.log(_person['age'])
+
+//menghapus properti objek
+console.log('sebelum menghapus :')
+console.log(_person)
+delete _person.isMaried
+console.log('setelah menghapus :')
+console.log(_person)
+ // 
+
+
+ //property
+ const _jenis = 'persegi'
+ const _panjang = 30
+ const _lebar = 30
+
+const _bangunDatar = { _jenis, _panjang, _lebar}
+
+
+let _student = {
+    name:'Giblar',
+    age:30,
+    className: 'RPL'
+}
+
+console.log("name" in _student)
+console.log("genre" in _student)
+console.log(_student.hasOwnProperty("name"))
+console.log(_student.hasOwnProperty("genre"))
+
+
+        const _fruits = new Array('apel', 'pisang', 'semangka')
+        console.log( _fruits)
+        //menambahkan dan menghapus element dalam array
+        _fruits.push("jeruk")//menambah jeruk ke akhir array
+        console.log(_fruits)
+        
+        _fruits.pop()//menghapus element terakhir pada array
+        console.log(_fruits)
+
+        _fruits.shift()//menghapus element pertama pada array
+        console.log(_fruits)
+
+        _fruits.splice(1,0, "melon")//menambahkan element di tengah array
+        console.log(_fruits)
+        //menghitung jumlah array
+        console.log(_fruits.length)
+        
+
+        //mengambilkam nilai index element
+        console.log(_fruits.indexOf('pisang'))
+        console.log(_fruits.indexOf('semangka'))
+
+
+        const _numbers = new Array (0,1,2,3,4)
+        //membuat salinan potongan array
+        const _newNumbers = _numbers.slice(2,4)
+        console.log(_newNumbers);
+        
+        
+    //mengabungkan 2 array
+    const _fruits2 = ['lengkeng', 'melon']
+    const _mergeFruits = _fruits.concat(_fruits2)
+    console.log(_mergeFruits)
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        //function
+        let nama = "sutarto"
+        let umur = 20
+        let asal = "benda"
+        function printText(nama,umur,asal) {
+            console.log("Hell word! nama saya " +nama,umur,asal)
+        }
+        printText(nama,umur,asal)
+
+        //arrow function
+        let printText2 = (nama) =>{
+            console.log("Nama saya " +nama)
+        }
+        printText2(nama)
+
+        //first-class-function
+        //function yang di masukan ke dalam variable
+
+        let printHello = function printText(nama,umur,asal) {
+            console.log("Hell word! nama saya " +nama,umur,asal)
+        }
+        printHello(nama,umur,asal)
+
+
+        //function default
+
+        let printHello1 = function printText(nama = "salah") {
+            console.log("Hell word! nama saya " +nama)
+        }
+        printHello1()
+
+        //function 
+        let harga = 1000
+        let margin
+
+        let hargaJual = harga + (margin || 500)
+
+        console.log(hargaJual)
+
+        //coalescing operator
+        //memberi nilai default
+        let harga1 = 1000
+        let margin1
+
+        let hargaJual1 = harga + (margin ?? 500)
+
+        console.log(hargaJual1)
+
+
+        //foreach
+        let buah = ['apel','mangga','angur']
+        buah.forEach((buah)=> console.log(buah))
+        
+        //sort
+        let arraySort = [9,8,7,6,5,4,3,2,1]
+        arraySort.sort()
+        console.log(arraySort)
+
+        //find
+        let hasil = arraySort.find((hasil) => hasil === 9)
+        console.log(hasil)
+
+
+    </script>
+</body>
+</html>

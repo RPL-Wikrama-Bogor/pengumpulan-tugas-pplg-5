@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Soal Day 1</title>
+</head>
+
+<body>
+    <script>
+        // Buatlah sebuah fungsi Javascript yang menggunakan filter untuk mengembalikan/menampilkan daftar buku dengan genre Fiction
+        const books = [
+            {
+                title: "Harry Potter and the Sorcerer's Stone",
+                author: "J.K. Rowling",
+                genre: "Fantasy",
+                year: 1997
+            },
+            {
+                title: "To Kill a Mockingbird",
+                author: "Harper Lee",
+                genre: "Fiction",
+                year: 1960
+            },
+            {
+                title: "The Great Gatsby",
+                author: "F. Scott Fitzgerald",
+                genre: "Fiction",
+                year: 1925
+            }
+        ];
+
+        let fictionBook = books.filter((books) => books.genre === "Fiction")
+        fictionBook.forEach((fictionBook) => console.log(fictionBook.title))
+
+        //buatlah sebuah fungsi js yang menggunakan map untuk mengembalikan daftar barang dengan harga diskon 10%
+
+        const Products = [
+            {
+                name: "Laptop",
+                price: 1000
+            },
+            {
+                name: "Smartphone",
+                price: 500
+            },
+            {
+                name: "Tablet",
+                price: 300
+            }
+        ];
+
+        let index = Products.map((Products) => Products["price"] - Products["price"] * 0.1)
+
+
+        console.log("Laptop seharga Rp." + index[0])
+        console.log("Smartphone seharga Rp." + index[1])
+        console.log("Tablet seharga Rp." + index[2])
+
+
+        // let productdics = products.map((product) => {
+        //     console.log(product.name + " seharga " + product.price);
+        //     return {
+        //         name: product.name,
+        //         price: product.price - (product.price * 0.1)
+        //     };
+        // }); //Cara Haram
+
+
+
+        //Buatlah sebuah fugnsi js untuk menyatukan array produts dan new products lalu tampilkan rata rata harganya
+
+        const newProducts = [
+            {
+                name: "Kulkas",
+                price: 200
+            },
+            {
+                name: "TV",
+                price: 300
+            }
+        ];
+
+        const _mergeProducts = Products.concat(newProducts)
+        console.log(_mergeProducts)
+
+        let hasil = 0
+        for (let index = 0; index < 4; index++) {
+            let hasil =_mergeProducts[index] + hasil
+        }
+        console.log(hasil)
+
+    </script>
+</body>
+
+</html>

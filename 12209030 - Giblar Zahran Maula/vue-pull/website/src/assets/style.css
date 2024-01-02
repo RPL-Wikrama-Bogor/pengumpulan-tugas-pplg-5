@@ -1,0 +1,11 @@
+body{
+    margin: 0;
+}
+.container {
+    margin: 10px 100px;
+  }
+  @media screen and (max-width: 600px) {
+    .container {
+      margin: 0;
+    }
+  }

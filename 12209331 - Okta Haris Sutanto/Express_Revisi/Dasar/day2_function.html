@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let person = {
+            name: 'John',
+            age: 17,
+            isMaried: false,
+        }
+        
+        // akses property
+        console.log(person.name);
+        console.log(person['age']);
+
+        // Menghapus property objek
+        console.log("sebelum menghapus: ");
+        console.log(person);
+        delete person.isMaried
+        console.log("setelah menghapus: ");
+        console.log(person);
+
+        // property
+        const jenis = 'persegi'
+        const panjang = 30
+        const lebar = 30
+
+        const bangunDatar = {jenis, panjang, lebar}
+        console.log(bangunDatar);
+
+        let student = {
+            name: 'Johny',
+            age: 17,
+            className: 'RPL'
+        }
+
+        console.log("name: " in student);
+        console.log("genre: " in student);
+        console.log(student.hasOwnProperty("name"));
+        console.log(student.hasOwnProperty("genre"));
+    </script>
+</body>
+</html>

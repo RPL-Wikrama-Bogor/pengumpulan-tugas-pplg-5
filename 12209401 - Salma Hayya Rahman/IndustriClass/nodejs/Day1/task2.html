@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const products = [
+        {
+          name: "Laptop",
+          harga: 1000,
+        },
+        {
+          name: "Smartphone",
+          harga: 500,
+        },
+        {
+          name: "tablet",
+          harga: 300,
+        },
+      ];
+        let hargaDiskon = products.map((products) => products.harga * 0.9)
+        let x = 0
+        hargaDiskon = products.filter((products) => products.harga = hargaDiskon[x++])
+        hargaDiskon.forEach((hargaDiskon) => console.log(`${hargaDiskon.name} seharga $${hargaDiskon.harga}`)) ;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let number = 10
+        var text1 = 'ayo buat houlder bag crochet (single quotes)'
+        let text2 = "ayo buat houlder bag croche (double quotes)"
+        const text3 = `ayo buat houlder bag croche (BackTip) = ${number}`//bisa meemanggil variable didalam nya
+        
+        let boolean = true
+
+        console.log(number)
+        console.log(text1)
+        console.log(text2)
+        console.log(text3)
+        console.log(boolean)
+
+        let tidakAdaNilai = null
+        console.log(tidakAdaNilai)
+
+        // let nilaiBelumDiisi
+        // console.log(nilaiBelumDiisi)
+
+        let simbol = Symbol('descripsi-simbol')
+        console.log(simbol)
+
+        let arrat = ['apel', 'semangka', 'jeruk']
+        console.log(arrat[1])
+
+        function tambah (a,b){
+            console.log(a+b)
+        }
+
+        let siswa = {
+            nama: "dila",
+            usia: 10,
+            asal: "cisarua"
+        }
+        console.log(siswa.nama)
+
+        let number1 = 10
+        let number2= 4
+
+        console.log(number1 + number2)
+        console.log(number1 - number2)
+        console.log(number1 * number2)
+        console.log(number1 / number2)
+        console.log(number1 % number2)
+
+        console.log(number1 == number2)
+        console.log(number1 != number2)
+        console.log(number1 > number2)
+        console.log(number1 < number2)
+        console.log(number1 >= number2)
+        console.log(number1 <= number2)
+        
+        // and, harus sama dua duanya
+        console.log(number1 != number2 && number1 > number2) 
+        // or, hanya satu maka berniai true
+        console.log(number1 <= number2 || number1 > number2)
+
+        number1 = number1 + number2
+        console.log(number1)
+        number1 += number2
+        console.log(number1)
+
+        // operator null checking
+        let object = null 
+        // di check
+        let cekObject = object?.nama
+        console.log(cekObject)
+
+        let cekUmur = (siswa.usia >= 18) ? "Dewasa" : "anak-anak"
+        console.log(cekUmur)
+
+        if(siswa.usia >= 18 ) {
+            console.log("Dewasa")
+        }else if (siswa.usia >= 12){
+            console.log("remaja")
+        }else {
+            console.log("anak-anak")
+        }
+
+        switch(siswa.asal) {
+            case "CyberLabs":
+                console.log("perusahaan")
+                break;
+            case "SMK WIKRAMA":
+                console.log("sekolah")
+                break;
+            default:
+                console.log("umum")
+                break;
+        }
+    </script>
+
+</body>
+</html>

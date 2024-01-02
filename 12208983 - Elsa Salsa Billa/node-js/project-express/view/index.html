@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="getBooks"></div>
+
+    <form id="addBook">
+        <h3>Add Book</h3>
+        <input type="text" id="name" name="name" placeholder="name" required>
+        <input type="text" id="author" name="author" placeholder="author" required>
+        <input type="text" id="year" name="year" placeholder="year" required>
+        <input type="number" id="page_count" name="page_count" placeholder="page_count" required>
+        <input type="text" id="publisher" name="publisher" placeholder="publisher" required>
+        <input type="submit" value="kirim">
+    </form>
+
+    <script>
+        const url = "http://localhost:3000"
+    </script>
+    <script src="./javascript/getBook.js"></script>
+    <script src="./javascript/addBook.js"></script>
+</body>
+</html>

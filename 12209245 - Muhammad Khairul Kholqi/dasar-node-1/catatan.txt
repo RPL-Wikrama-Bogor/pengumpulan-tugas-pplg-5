@@ -1,0 +1,4 @@
+const: variable yang dapat di ubah
+let, var: variable yang tidak dapat di ubah
+global: merupakah cakupan yang dapat di akses di luar function (variablenya: var)
+block: merupakan cakupan yang tidak dapat di akses di luar function

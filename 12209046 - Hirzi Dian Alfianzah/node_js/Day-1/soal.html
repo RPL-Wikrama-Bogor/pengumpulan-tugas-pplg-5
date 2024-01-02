@@ -1,0 +1,78 @@
+<!-- Buatlah sebuah fungsi Javacript yang menggunakan filter untuk mengembalikan/menampilkan daftar buku dengan genre "fiction" -->
+<script>
+  const books = [
+    {
+      title: "Harry Potter and The Sorcerers Stone",
+      author: "J.K. Rowling",
+      genre: "Fantasy",
+      year: 1997,
+    },
+    {
+      title: "To Kill a Mockingbird",
+      author: "Harper Lee",
+      genre: "Fiction",
+      year: 1960,
+    },
+    {
+      title: "The Great Gatsby",
+      author: "F. Scott Fitzgerald",
+      genre: "Fiction",
+      year: 1925,
+    },
+  ];
+
+  //Jawaban
+  let fictionBooks = books.filter(
+    (book) => book.genre.toLowerCase() === "fiction"
+  );
+
+  fictionBooks.forEach((books) => console.log(books.title));
+
+    console.log("-------------------------------------------")
+  //Soal 2
+
+  //Buatlah sebuah fungsi Java Script yang menggunakan map untuk mengembalikan daftar barang dengan harga diskon
+  const products = [
+    {
+      name: "Laptop",
+      price: 1000,
+    },
+    {
+      name: "SmartPhone",
+      price: 500,
+    },
+    {
+      name: "Tablet",
+      price: 300,
+    },
+  ];
+
+    //Jawab
+    let diskonProduk = products.map((products) => products.price - (products.price * 0.1))
+      let x = 0
+
+      products.forEach((products) => {
+        console.log(`${products.name} seharga $ ${diskonProduk[x++]}`)
+      });
+
+      console.log("-------------------------------------------")
+
+    //soal 3
+    // Buatlah sebuah fungsi javaScript untuk menyatukan array products dan newproducts lalu tampilkan rata rata harganya
+
+    const newProducts = [
+      {
+        name: "kulkas",
+        price: 200
+      },
+
+      {
+        name: "TV",
+        price: 300
+      }
+    ];
+
+      //Jawab
+      const mergeProduct = products.concat(newProducts)
+      let  = 
+</script>

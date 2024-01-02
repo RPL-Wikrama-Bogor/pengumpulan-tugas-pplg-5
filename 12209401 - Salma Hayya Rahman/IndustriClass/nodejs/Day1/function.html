@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let varNama = "salam";
+
+      function printText(nama) {
+        console.log("nama saya " + nama);
+      }
+      printText(varNama);
+
+      //arrow function
+      let printText2 = (nama) => {
+        console.log("nama saya " + nama);
+      };
+      printText2(varNama);
+
+      //first class function
+      let printHello = function printText(nama = "pengunjung") {
+        console.log("nama saya " + nama);
+      };
+      printHello();
+
+      let harga = 1000;
+      let margin;
+      let hargaJual1 = harga + (margin || 500); //mendefinisikan nilai variabel margin
+      let hargaJual2 = harga + (margin ?? 500);
+      console.log(hargaJual1);
+      console.log(hargaJual2);
+
+      //transformasi array
+      let angka = [1, 2, 3, 4, 5];
+      let angkaBaru = angka.map((angka) => angka * 5); //merubah value array sesuai operator nya
+      console.log(angkaBaru);
+
+      let angkaGanjil = angka.filter((angka) => angka % 2 === 1); // memfilter value array sesuai perintahnya
+      console.log(angkaGanjil);
+
+      let num1 = 1;
+      let text1 = "1";
+      console.log(num1 == text1); //melihat valuenya apakah sama
+      console.log(num1 === text1); //type datanya apakah sama
+
+      let sumAngka = angka.reduce(
+        (accumulator, currenValue) => accumulator + currenValue,0);
+      console.log(sumAngka); //menjumlahkan seluruh value array
+
+      let buah = ["apel", "mangga", "nanas"];
+      buah.forEach((buah) => console.log(buah)); //perulangan
+
+      //mengurutkan sesuai abjad
+      buah.sort();
+      console.log(buah);
+
+      //mencari
+      let cari = buah.find((cari) => cari === "apel");
+      console.log(cari);
+    </script>
+  </body>
+</html>
