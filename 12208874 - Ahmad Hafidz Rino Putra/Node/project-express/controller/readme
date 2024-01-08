@@ -1,0 +1,22 @@
+ const query = `SELECT * FROM user WHERE email = '${req.body.email}' OR username = '${req.body.username}'`;
+        pool.getConnection((err, connection) => {
+            if (err) throw err;
+            connection.query(query, (err, results) => {
+                if (err) throw err;
+                if(results.length > 0) {
+                    responseFailValidate(res, 'Email/Username sudah terdaftar!!!');
+                }
+                else {
+                    const query = `INSERT INTO user SET?`;
+                    pool.getConnection((err, connection) => {
+                        if (err) throw err;
+                        connection.query(query, [req.body], (err, results) => {
+                            if (err) throw err;
+                            responAuthSuccess(res, jwt.sign({id: results.insertId}, accessTokenSecret, {expiresIn: 3600}), 'Register Success', results);
+                        });
+                        connection.release();
+                    });
+                }
+            });
+            connection.release();
+        });

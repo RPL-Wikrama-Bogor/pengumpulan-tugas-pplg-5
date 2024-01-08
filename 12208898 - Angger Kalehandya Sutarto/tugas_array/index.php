@@ -1,64 +1,125 @@
-<?php 
-    $tabungan = [10000, 50000, 10000, 5000, 20000, 5000, 50000, 20000];
-    $kalimat = implode(", ", $tabungan);
-    // 1. 
-    echo "uang yang terdapat pada tabunga saya ada : ".$kalimat;
-    echo "<br>";
+<?php
+require 'array.php';
+?>
+<!DOCTYPE html>
+<html lang="en">
 
-    $pecahan_unik = array_unique($tabungan);
-    $pecahan_unik_implode = implode(", ", $pecahan_unik);
-    echo "Pecahan yang terdapat di tabungan saya adalah : " . $pecahan_unik_implode;
-    echo "<br>";
-
-    echo "Jumlah Tabungan saia : " .array_sum($tabungan);
-    echo "<br>";
-
-    echo "Uang Tabungan paling kecil saya : " .min($tabungan);
-    echo "<br>";
-
-    echo "Uang Tabungan paling besar saya : " . max($tabungan);
-    echo "<br>";
-
-    $tabunganCopy = $tabungan; 
-    asort($tabunganCopy);
-    $urutanTerkecil = implode(", ", $tabunganCopy);
-    echo "Pecahan uang terkecil adalah " . $urutanTerkecil;
-    echo "<br>";
-
-    $tabunganCopy1 = $tabungan;
-    arsort($tabunganCopy1);
-    $urutanTerbesar = implode(", ", $tabunganCopy1);
-    echo "Pecahan uang terkecil adalah " . $urutanTerbesar;
-    echo "<br>";
-
-    $tabungan_baru = [];
-    $gabung = false;
-    
-    foreach ($tabungan as $nilai) {
-        if ($nilai == 50000 && !$gabung) {
-            $tabungan_baru[] = 100000;
-            $gabung = true;
-        } elseif ($nilai == 50000 && $gabung) {
-           
-        } else {
-            $tabungan_baru[] = $nilai;
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Array</title>
+    <style>
+        .daftar-barang {
+            border: 2px solid black;
+            padding: 3px;
         }
-    }
-    
 
-    $implodeSplice = implode(', ', $tabungan_baru);
-    echo "saya menganti nilai 50000 dengan 100000, maka uang saya menjadi: <b>" . $implodeSplice . "</b>";
-    echo "<br>";
+        h1 {
+            margin-left: 40px;
+        }
 
-    array_push($tabungan, 20000);
-    $tambahTabungan = implode(", ", $tabungan_baru);
-    echo "Hari ini saya menabung 20000 maka tabungan saya menjadi : ". $tambahTabungan;
-    echo "<br>";
+        ol li {
+            padding: 5px;
+            margin-left: 50px;
+            font-size: 17px;
+        }
 
-    asort($tabungan);
-    $urutanTerkecil = implode(", ", $tabungan_baru);
-    echo "Pecahan uang terkecil adalah : " . $urutanTerkecil;
-    echo "<br>";
+        .form-input {
+            border: 2px solid black;
+            margin-top: 15px;
+            padding: 5px;
+        }
 
-    echo "maka jumlah tabungan saya sekarang : ";
-    echo array_sum($tabungan);
+        .inputan {
+            padding: 7px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="daftar-barang">
+        <h1>Daftar barang Ikea</h1>
+        <ol>
+            <?php foreach ($furnitures as $furniture) : ?>
+                <li>Nama Furniture: <?= $furniture['nama']; ?><br> Harga: Rp. <?= number_format($furniture['harga'], 2, ',', '.'); ?></li>
+            <?php endforeach ?>
+        </ol>
+    </div>
+    <form action="" method="post">
+        <div class="form-input">
+            <div class="inputan">
+                <!-- rakitan -->
+                <label for="rakitan">Pilih Furniture Rakitan: </label>
+                <select name="rakitan" id="rakitan">
+                    <option hidden selected value="">- - Rakitan - -</option>
+                    <?php foreach ($furnitures as $furniture => $index) : ?>
+                        <?php if ($index['tipe'] == 'rakitan') : ?>
+                            <option value="<?= $furniture; ?>"><?= $index['nama']; ?></option>
+                        <?php endif ?>
+                    <?php endforeach ?>
+                </select><br>
+
+                <!-- jumlah pembelian rakitan -->
+                <label for="jumlah-barang">Jumlah Pembelian Furniture Rakitan: </label>
+                <input type="number" name="jumlah_rakitan" id="jumlah-barang" required><br>
+
+                <!-- non-rakitan -->
+                <label for="non-rakitan">Pilih Furniture Rakitan: </label>
+                <select name="nonRakitan" id="non-rakitan">
+                    <option hidden selected value="">- - NON - Rakitan - -</option>
+                    <?php foreach ($furnitures as $furniture => $index) : ?>
+                        <?php if ($index['tipe'] == 'non-rakitan') : ?>
+                            <option value="<?= $furniture; ?>"><?= $index['nama']; ?></option>
+                        <?php endif ?>
+                    <?php endforeach ?>
+                </select><br>
+
+                <!-- jumlah pembelian non-rakitan -->
+                <label for="jumlah-barang-non"> Jumlah Pembelian Furniture Tidak Rakitan: </label>
+                <input type="number" name="jumlah_nonRakitan" id="jumlah-barang-non" required><br>
+
+                <!-- submit -->
+                <button type="submit" name="beli">Beli</button>
+            </div>
+        </div>
+
+        <div class="struk-pembelian">
+            <?php
+        
+            if (isset($_POST['beli'])) {
+                $rakitan = $_POST['rakitan'];
+                $non_rakitan = $_POST['nonRakitan'];
+
+                if ($rakitan == '' || $non_rakitan == '') {
+                    echo "<p style='color: red; font-size: 20px;'> Harus Pilih Furniture Terlebih Dahulu</p>";
+                } else {
+
+                    $jumlahPembelianRakitan = $_POST['jumlah_rakitan'];
+                    $jumlahPembelianNonRakitan = $_POST['jumlah_nonRakitan'];
+
+                    $nameRakitan = $furnitures[$rakitan]['nama'];
+                    $nameNonRakitan = $furnitures[$non_rakitan]['nama'];
+
+                    $hargaRakitan = $furnitures[$rakitan]['harga'];
+                    $hargaTotalRakitan = $hargaRakitan * $jumlahPembelianRakitan;
+
+                    $hargaNonRakitan = $furnitures[$non_rakitan]['harga'];
+                    $hargaTotalNonRakitan = $hargaNonRakitan * $jumlahPembelianNonRakitan;
+
+                    $totalPembayaran = $hargaTotalRakitan + $hargaTotalNonRakitan;
+
+
+                    echo "<h1> Bukti Pembelian </h1>";
+                    echo "Furniture Rakitan : " . $nameRakitan . " (" . $jumlahPembelianRakitan . ") <br>";
+                    echo "harga Furniture Rakitan : Rp. " . number_format($hargaTotalRakitan, 2, ',', '.') . "<br>";
+                    echo "Furniture Non-Rakitan: " . $nameNonRakitan . " (" . $jumlahPembelianNonRakitan . ") <br>";
+                    echo "Harga Furniture Non-Rakitan : Rp. " . number_format($hargaTotalNonRakitan, 2, ',', '.') . "<br>";
+                    echo "Total Pembayaran : <b>Rp. " . number_format($totalPembayaran, 2, ",", '.') . "</b>";
+                }
+            }
+            ?>
+        </div>
+    </form>
+</body>
+
+</html>

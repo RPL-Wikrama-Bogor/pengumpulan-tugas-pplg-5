@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!-- // Buatlah sebuah fungsi js yg menggunakan filter untuk mengembalikan/menampilkan daftar buku dgn genre "Fiction" -->
+    <script>
+        const books = [{
+            title: "Harry Potter and The Sorcerer's Stone",
+            author: "J.K. Rowling",
+            genre: "Fantasy",
+            year: 1997
+        },
+        {
+            title: "To Kill a Mocking Bird",
+            author: "Harper Lee",
+            genre: "Fiction",
+            year: 1960
+        },
+        {
+            title: "The Great Gatsby",
+            author: "F. Scott Fitzgerald",
+            genre: "Fiction",
+            year: 1925
+        }]
+
+        let fictionBook = books.filter((books) => books.genre === "Fiction")
+        fictionBook.forEach((fictionBook) => console.log(fictionBook.title))
+
+
+
+        const products = [
+            {
+                name: "Laptop",
+                price: 1000
+            },
+            {
+                name: "Smartphone",
+                price: 500
+            },
+            {
+                name: "Tablet",
+                price: 300
+            },
+        ];
+        
+        // filter hasilnya bisa berubah => WHERE
+        // map hasilnya berdasrakan jika memenuhi kondisi tertentu
+
+        let hargaDiskon = products.map((products) => products.price * 0.9)
+        let x = 0
+        hargaDiskon = products.filter((products) => products.price = hargaDiskon[x++])
+        hargaDiskon.forEach((hargaDiskon) => console.log(`${hargaDiskon.name} seharga $${hargaDiskon.price}`));
+
+
+        const newProduct = [
+            {
+                name: "Kulkas",
+                price: 200
+            },
+            {
+                name: "TV",
+                price: 300
+            }
+        ]
+
+        // Menggabungkan kedua array
+        const combinedProducts = [...hargaDiskon, ...newProduct];
+
+        // Menghitung rata-rata harga
+        const totalHarga = combinedProducts.reduce((total, product) => total + product.price, 0);
+        const rataRataHarga = totalHarga / combinedProducts.length;
+
+        console.log("Daftar Produk Gabungan:");
+        combinedProducts.forEach((product) => console.log(`${product.name} seharga $${product.price}`));
+
+        console.log(`Rata-rata Harga: $${rataRataHarga}`);
+
+
+
+    </script>
+</body>
+
+</html>
